@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "99287C0E-0775-42AD-A408-D5B2E4B98FC9"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F97A087-1DA4-462D-B6AF-DB12BFA3C371"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "self_fortune/View/Make/MakeListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5EE8F0B3-4AB3-4869-870E-5FEE7E2554B2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "self_fortune/View/Fortune/FortuneViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A7C59DF3-B458-4F21-B6BC-26F8C5349F7A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "self_fortune/View/Fortune/FortuneViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "textFieldAction(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A7C59DF3-B458-4F21-B6BC-26F8C5349F7A - 8e5356d42070d993"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "self_fortune.FortuneViewController.configurePicker() -&gt; ()"
+                  moduleName = "self_fortune"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsujinoryuushi/Desktop/%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA/self_fortune/self_fortune/View/Fortune/FortuneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "117">
+               </Location>
+               <Location
+                  uuid = "A7C59DF3-B458-4F21-B6BC-26F8C5349F7A - 79102ba29ca18080"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "self_fortune.FortuneViewController.textFieldAction(Any) -&gt; ()"
+                  moduleName = "self_fortune"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsujinoryuushi/Desktop/%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA/self_fortune/self_fortune/View/Fortune/FortuneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9ECF5CEE-1034-4C59-82FA-A0129AC852A4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "self_fortune/View/Fortune/FortuneViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "doneDatePicker()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9ECF5CEE-1034-4C59-82FA-A0129AC852A4 - 503361f6e099e223"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "self_fortune.FortuneViewController.doneDatePicker() -&gt; ()"
+                  moduleName = "self_fortune"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsujinoryuushi/Desktop/%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA/self_fortune/self_fortune/View/Fortune/FortuneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "849">
+               </Location>
+               <Location
+                  uuid = "9ECF5CEE-1034-4C59-82FA-A0129AC852A4 - 503361f6e099e240"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "self_fortune.FortuneViewController.doneDatePicker() -&gt; ()"
+                  moduleName = "self_fortune"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsujinoryuushi/Desktop/%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA/self_fortune/self_fortune/View/Fortune/FortuneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "78">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

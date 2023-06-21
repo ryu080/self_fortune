@@ -1,0 +1,330 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "090-NN-fod"; */
+"090-NN-fod.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "1PM-8s-Gfh"; */
+"1PM-8s-Gfh.normalTitle" = "☆";
+
+/* Class = "UIButton"; configuration.title = "戻る"; ObjectID = "2Hg-CC-mj7"; */
+"2Hg-CC-mj7.configuration.title" = "戻る";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2Hg-CC-mj7"; */
+"2Hg-CC-mj7.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2pm-rM-4YS"; */
+"2pm-rM-4YS.text" = "Label";
+
+/* Class = "UILabel"; text = "占い結果"; ObjectID = "3rY-0p-9mh"; */
+"3rY-0p-9mh.text" = "占い結果";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4Yw-Ci-zuP"; */
+"4Yw-Ci-zuP.text" = "Label";
+
+/* Class = "UISegmentedControl"; 4pT-DR-q8D.segmentTitles[0] = "大吉"; ObjectID = "4pT-DR-q8D"; */
+"4pT-DR-q8D.segmentTitles[0]" = "大吉";
+
+/* Class = "UISegmentedControl"; 4pT-DR-q8D.segmentTitles[1] = "中吉"; ObjectID = "4pT-DR-q8D"; */
+"4pT-DR-q8D.segmentTitles[1]" = "中吉";
+
+/* Class = "UISegmentedControl"; 4pT-DR-q8D.segmentTitles[2] = "小吉"; ObjectID = "4pT-DR-q8D"; */
+"4pT-DR-q8D.segmentTitles[2]" = "小吉";
+
+/* Class = "UISegmentedControl"; 4pT-DR-q8D.segmentTitles[3] = "凶"; ObjectID = "4pT-DR-q8D"; */
+"4pT-DR-q8D.segmentTitles[3]" = "凶";
+
+/* Class = "UILabel"; text = "健康運"; ObjectID = "545-SM-eL7"; */
+"545-SM-eL7.text" = "健康運";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "6DK-KX-oDa"; */
+"6DK-KX-oDa.text" = "Label";
+
+/* Class = "UILabel"; text = "2023年の運勢"; ObjectID = "6mn-4M-ZcP"; */
+"6mn-4M-ZcP.text" = "2023年の運勢";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "7Jr-3d-P8t"; */
+"7Jr-3d-P8t.normalTitle" = "☆";
+
+/* Class = "UILabel"; text = "アドバイス"; ObjectID = "7f9-7C-MHW"; */
+"7f9-7C-MHW.text" = "アドバイス";
+
+/* Class = "UILabel"; text = "恋愛運"; ObjectID = "9Uv-T6-cN1"; */
+"9Uv-T6-cN1.text" = "恋愛運";
+
+/* Class = "UILabel"; text = "健康運"; ObjectID = "9cV-CL-LEU"; */
+"9cV-CL-LEU.text" = "健康運";
+
+/* Class = "UIButton"; normalTitle = "作成"; ObjectID = "CNt-hb-0Zv"; */
+"CNt-hb-0Zv.normalTitle" = "作成";
+
+/* Class = "UIBarButtonItem"; title = "戻る"; ObjectID = "CRc-7C-mK2"; */
+"CRc-7C-mK2.title" = "戻る";
+
+/* Class = "UILabel"; text = "恋愛運"; ObjectID = "Cnz-o9-Tma"; */
+"Cnz-o9-Tma.text" = "恋愛運";
+
+/* Class = "UIButton"; normalTitle = "占う"; ObjectID = "CpQ-wh-oUF"; */
+"CpQ-wh-oUF.normalTitle" = "占う";
+
+/* Class = "UILabel"; text = "2023年の運勢"; ObjectID = "Cyu-yc-sqN"; */
+"Cyu-yc-sqN.text" = "2023年の運勢";
+
+/* Class = "UILabel"; text = "占い結果"; ObjectID = "Dl9-sF-MW7"; */
+"Dl9-sF-MW7.text" = "占い結果";
+
+/* Class = "UILabel"; text = "占い結果"; ObjectID = "EEB-Hs-hxB"; */
+"EEB-Hs-hxB.text" = "占い結果";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "F1g-Wh-FdI"; */
+"F1g-Wh-FdI.normalTitle" = "☆";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "FSg-tx-aLv"; */
+"FSg-tx-aLv.normalTitle" = "☆";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Flv-3F-q7E"; */
+"Flv-3F-q7E.text" = "Label";
+
+/* Class = "UILabel"; text = "アドバイス"; ObjectID = "Fu8-0j-e78"; */
+"Fu8-0j-e78.text" = "アドバイス";
+
+/* Class = "UILabel"; text = "恋愛運"; ObjectID = "GQI-ZU-YiI"; */
+"GQI-ZU-YiI.text" = "恋愛運";
+
+/* Class = "UITabBarItem"; title = "占う"; ObjectID = "GwZ-f7-zho"; */
+"GwZ-f7-zho.title" = "占う";
+
+/* Class = "UIButton"; normalTitle = "♡"; ObjectID = "I1o-PA-Iu6"; */
+"I1o-PA-Iu6.normalTitle" = "♡";
+
+/* Class = "UIButton"; configuration.title = "戻る"; ObjectID = "I7G-uQ-7HZ"; */
+"I7G-uQ-7HZ.configuration.title" = "戻る";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "I7G-uQ-7HZ"; */
+"I7G-uQ-7HZ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "恋愛運"; ObjectID = "IE4-yT-jgF"; */
+"IE4-yT-jgF.text" = "恋愛運";
+
+/* Class = "UISegmentedControl"; IPb-CE-d5j.segmentTitles[0] = "良い"; ObjectID = "IPb-CE-d5j"; */
+"IPb-CE-d5j.segmentTitles[0]" = "良い";
+
+/* Class = "UISegmentedControl"; IPb-CE-d5j.segmentTitles[1] = "普通"; ObjectID = "IPb-CE-d5j"; */
+"IPb-CE-d5j.segmentTitles[1]" = "普通";
+
+/* Class = "UISegmentedControl"; IPb-CE-d5j.segmentTitles[2] = "悪い"; ObjectID = "IPb-CE-d5j"; */
+"IPb-CE-d5j.segmentTitles[2]" = "悪い";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "K6H-Vc-edv"; */
+"K6H-Vc-edv.normalTitle" = "☆";
+
+/* Class = "UISegmentedControl"; LSU-zP-TxG.segmentTitles[0] = "大吉"; ObjectID = "LSU-zP-TxG"; */
+"LSU-zP-TxG.segmentTitles[0]" = "大吉";
+
+/* Class = "UISegmentedControl"; LSU-zP-TxG.segmentTitles[1] = "小吉"; ObjectID = "LSU-zP-TxG"; */
+"LSU-zP-TxG.segmentTitles[1]" = "小吉";
+
+/* Class = "UISegmentedControl"; LSU-zP-TxG.segmentTitles[2] = "吉"; ObjectID = "LSU-zP-TxG"; */
+"LSU-zP-TxG.segmentTitles[2]" = "吉";
+
+/* Class = "UISegmentedControl"; LSU-zP-TxG.segmentTitles[3] = "凶"; ObjectID = "LSU-zP-TxG"; */
+"LSU-zP-TxG.segmentTitles[3]" = "凶";
+
+/* Class = "UISegmentedControl"; LSU-zP-TxG.segmentTitles[4] = "大凶"; ObjectID = "LSU-zP-TxG"; */
+"LSU-zP-TxG.segmentTitles[4]" = "大凶";
+
+/* Class = "UIBarButtonItem"; title = "追加"; ObjectID = "MH3-lf-E5w"; */
+"MH3-lf-E5w.title" = "追加";
+
+/* Class = "UIBarButtonItem"; title = "戻る"; ObjectID = "Mfw-Wg-LlV"; */
+"Mfw-Wg-LlV.title" = "戻る";
+
+/* Class = "UILabel"; text = "相性が良い人"; ObjectID = "Pvi-ct-QXX"; */
+"Pvi-ct-QXX.text" = "相性が良い人";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "T9e-rW-hA3"; */
+"T9e-rW-hA3.normalTitle" = "☆";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "TZN-I7-axt"; */
+"TZN-I7-axt.text" = "Label";
+
+/* Class = "UILabel"; text = "名前"; ObjectID = "UBv-vZ-Sg8"; */
+"UBv-vZ-Sg8.text" = "名前";
+
+/* Class = "UIButton"; normalTitle = "♡"; ObjectID = "ULG-fh-bop"; */
+"ULG-fh-bop.normalTitle" = "♡";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "Ue9-Ly-MrV"; */
+"Ue9-Ly-MrV.normalTitle" = "☆";
+
+/* Class = "UILabel"; text = "⭐️⭐️⭐️⭐️⭐︎"; ObjectID = "Wei-N3-3OG"; */
+"Wei-N3-3OG.text" = "⭐️⭐️⭐️⭐️⭐︎";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "XIZ-TC-iJb"; */
+"XIZ-TC-iJb.normalTitle" = "☆";
+
+/* Class = "UITabBarItem"; title = "作成"; ObjectID = "YWX-uG-kgP"; */
+"YWX-uG-kgP.title" = "作成";
+
+/* Class = "UILabel"; text = "自作自演占い"; ObjectID = "YcC-tK-G4C"; */
+"YcC-tK-G4C.text" = "自作自演占い";
+
+/* Class = "UINavigationItem"; title = "占いリスト"; ObjectID = "ZQK-Ob-Ufu"; */
+"ZQK-Ob-Ufu.title" = "占いリスト";
+
+/* Class = "UILabel"; text = "仕事運"; ObjectID = "Zds-Yw-xpe"; */
+"Zds-Yw-xpe.text" = "仕事運";
+
+/* Class = "UILabel"; text = "アドバイス"; ObjectID = "a82-bV-KqQ"; */
+"a82-bV-KqQ.text" = "アドバイス";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "apT-D8-xrR"; */
+"apT-D8-xrR.normalTitle" = "☆";
+
+/* Class = "UIButton"; normalTitle = "今年の運勢"; ObjectID = "bdu-gh-4K4"; */
+"bdu-gh-4K4.normalTitle" = "今年の運勢";
+
+/* Class = "UILabel"; text = "2023年の運勢占い"; ObjectID = "cF1-u2-Jtq"; */
+"cF1-u2-Jtq.text" = "2023年の運勢占い";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "clh-w1-YLj"; */
+"clh-w1-YLj.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "dA8-Hk-xpt"; */
+"dA8-Hk-xpt.text" = "Label";
+
+/* Class = "UILabel"; text = "仕事運"; ObjectID = "dBB-aE-Eo3"; */
+"dBB-aE-Eo3.text" = "仕事運";
+
+/* Class = "UILabel"; text = "健康運"; ObjectID = "dP5-2N-z5p"; */
+"dP5-2N-z5p.text" = "健康運";
+
+/* Class = "UIButton"; normalTitle = "♡"; ObjectID = "dPG-jn-xbb"; */
+"dPG-jn-xbb.normalTitle" = "♡";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "ddv-Sr-AYG"; */
+"ddv-Sr-AYG.normalTitle" = "☆";
+
+/* Class = "UILabel"; text = "健康運"; ObjectID = "ehi-2b-8ST"; */
+"ehi-2b-8ST.text" = "健康運";
+
+/* Class = "UIButton"; normalTitle = "テンプレートを使う"; ObjectID = "gFc-dO-tIV"; */
+"gFc-dO-tIV.normalTitle" = "テンプレートを使う";
+
+/* Class = "UILabel"; text = "⭐️⭐️⭐️⭐️⭐︎"; ObjectID = "gfJ-A7-sZV"; */
+"gfJ-A7-sZV.text" = "⭐️⭐️⭐️⭐️⭐︎";
+
+/* Class = "UILabel"; text = "★★★☆☆"; ObjectID = "gqi-0R-LwF"; */
+"gqi-0R-LwF.text" = "★★★☆☆";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "gu4-SP-iP8"; */
+"gu4-SP-iP8.normalTitle" = "☆";
+
+/* Class = "UILabel"; text = "運勢"; ObjectID = "hJy-93-bjP"; */
+"hJy-93-bjP.text" = "運勢";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hQL-oU-gKW"; */
+"hQL-oU-gKW.text" = "Label";
+
+/* Class = "UILabel"; text = "生年月日"; ObjectID = "hQe-NF-c2f"; */
+"hQe-NF-c2f.text" = "生年月日";
+
+/* Class = "UIButton"; normalTitle = "作成"; ObjectID = "iSp-qG-J7i"; */
+"iSp-qG-J7i.normalTitle" = "作成";
+
+/* Class = "UILabel"; text = "★★★☆☆"; ObjectID = "ikj-ts-ieA"; */
+"ikj-ts-ieA.text" = "★★★☆☆";
+
+/* Class = "UIButton"; normalTitle = "戻る"; ObjectID = "jXL-SA-Tda"; */
+"jXL-SA-Tda.normalTitle" = "戻る";
+
+/* Class = "UIButton"; configuration.title = "😀"; ObjectID = "jep-JV-nAi"; */
+"jep-JV-nAi.configuration.title" = "😀";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jep-JV-nAi"; */
+"jep-JV-nAi.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "2023年の運勢"; ObjectID = "kf3-It-rUI"; */
+"kf3-It-rUI.text" = "2023年の運勢";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "kuB-Mx-PpA"; */
+"kuB-Mx-PpA.normalTitle" = "☆";
+
+/* Class = "UILabel"; text = "👇"; ObjectID = "m9Y-N8-Bto"; */
+"m9Y-N8-Bto.text" = "👇";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "nHG-31-D4A"; */
+"nHG-31-D4A.normalTitle" = "☆";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "nms-Iv-tUy"; */
+"nms-Iv-tUy.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "テンプレ"; ObjectID = "o1Q-Po-GTb"; */
+"o1Q-Po-GTb.normalTitle" = "テンプレ";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "oBa-6L-PpR"; */
+"oBa-6L-PpR.normalTitle" = "☆";
+
+/* Class = "UILabel"; text = "🩷🩷🩷♡♡"; ObjectID = "oef-0m-N8H"; */
+"oef-0m-N8H.text" = "🩷🩷🩷♡♡";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "rlj-AZ-PiJ"; */
+"rlj-AZ-PiJ.normalTitle" = "☆";
+
+/* Class = "UILabel"; text = "⭐️⭐️⭐️⭐️⭐︎"; ObjectID = "rrV-wT-i3t"; */
+"rrV-wT-i3t.text" = "⭐️⭐️⭐️⭐️⭐︎";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "sM5-jr-yFU"; */
+"sM5-jr-yFU.normalTitle" = "☆";
+
+/* Class = "UITabBarItem"; title = "作成"; ObjectID = "tfK-M0-4nI"; */
+"tfK-M0-4nI.title" = "作成";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "tkH-xY-XY3"; */
+"tkH-xY-XY3.normalTitle" = "☆";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "tlI-5a-cCv"; */
+"tlI-5a-cCv.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "♡"; ObjectID = "uDO-uH-Nbe"; */
+"uDO-uH-Nbe.normalTitle" = "♡";
+
+/* Class = "UILabel"; text = "アドバイス"; ObjectID = "uSq-aF-whX"; */
+"uSq-aF-whX.text" = "アドバイス";
+
+/* Class = "UILabel"; text = "2023年の運勢"; ObjectID = "uXk-oC-Cgm"; */
+"uXk-oC-Cgm.text" = "2023年の運勢";
+
+/* Class = "UIBarButtonItem"; title = "戻る"; ObjectID = "ugw-4Z-Vck"; */
+"ugw-4Z-Vck.title" = "戻る";
+
+/* Class = "UILabel"; text = "🩷🩷🩷🩷♡"; ObjectID = "uoG-OR-mhi"; */
+"uoG-OR-mhi.text" = "🩷🩷🩷🩷♡";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "v5a-hg-cKv"; */
+"v5a-hg-cKv.normalTitle" = "☆";
+
+/* Class = "UILabel"; text = "占い結果"; ObjectID = "vJT-iv-UHa"; */
+"vJT-iv-UHa.text" = "占い結果";
+
+/* Class = "UILabel"; text = "★★★☆☆"; ObjectID = "wTo-c0-fQG"; */
+"wTo-c0-fQG.text" = "★★★☆☆";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "wyN-o6-II0"; */
+"wyN-o6-II0.normalTitle" = "☆";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wyO-Vu-dr4"; */
+"wyO-Vu-dr4.text" = "Label";
+
+/* Class = "UILabel"; text = "仕事運"; ObjectID = "x25-MD-Cpr"; */
+"x25-MD-Cpr.text" = "仕事運";
+
+/* Class = "UITabBarItem"; title = "占う"; ObjectID = "yYm-W7-iwA"; */
+"yYm-W7-iwA.title" = "占う";
+
+/* Class = "UIButton"; normalTitle = "♡"; ObjectID = "yeF-gI-nMP"; */
+"yeF-gI-nMP.normalTitle" = "♡";
+
+/* Class = "UIButton"; normalTitle = "☆"; ObjectID = "yr1-bK-yiI"; */
+"yr1-bK-yiI.normalTitle" = "☆";
+
+/* Class = "UILabel"; text = "仕事運"; ObjectID = "zhD-ud-aYy"; */
+"zhD-ud-aYy.text" = "仕事運";

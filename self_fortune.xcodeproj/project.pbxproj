@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E6ED67BEB05A4627334FA82 /* Pods_self_fortune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F49D09FD9129765B6103B71 /* Pods_self_fortune.framework */; };
+		B70A32B62A2CD1A2001C98A4 /* FortuneResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A32B52A2CD1A2001C98A4 /* FortuneResultViewController.swift */; };
+		B71E089F2A0DC7400046DE16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E089E2A0DC7400046DE16 /* AppDelegate.swift */; };
+		B71E08A12A0DC7400046DE16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E08A02A0DC7400046DE16 /* SceneDelegate.swift */; };
+		B71E08A62A0DC7400046DE16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71E08A42A0DC7400046DE16 /* Main.storyboard */; };
+		B71E08A82A0DC7450046DE16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71E08A72A0DC7450046DE16 /* Assets.xcassets */; };
+		B71E08AB2A0DC7450046DE16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71E08A92A0DC7450046DE16 /* LaunchScreen.storyboard */; };
+		B71E08B32A0E15010046DE16 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E08B22A0E15010046DE16 /* MainViewController.swift */; };
+		B71E08C02A0E1B600046DE16 /* FortuneSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E08BF2A0E1B600046DE16 /* FortuneSecondViewController.swift */; };
+		B71E08C22A0E201E0046DE16 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E08C12A0E201E0046DE16 /* HomeViewController.swift */; };
+		B71E08C42A0E20360046DE16 /* MakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E08C32A0E20360046DE16 /* MakeViewController.swift */; };
+		B71E08C62A0E204C0046DE16 /* FortuneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E08C52A0E204C0046DE16 /* FortuneViewController.swift */; };
+		B7C3628E2A31DD2A009BD3AC /* self_fortune.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7C3628C2A31DD2A009BD3AC /* self_fortune.xcdatamodeld */; };
+		B7CA518E2A2425A300F2096B /* MakeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA518D2A2425A300F2096B /* MakeListViewController.swift */; };
+		B7CA51912A24272500F2096B /* MakeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA518F2A24272500F2096B /* MakeListTableViewCell.swift */; };
+		B7CA51922A24272500F2096B /* MakeListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7CA51902A24272500F2096B /* MakeListTableViewCell.xib */; };
+		B7CA51942A2436CF00F2096B /* MakeResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA51932A2436CF00F2096B /* MakeResultViewController.swift */; };
+		B7CA51A32A255B6200F2096B /* MakeResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA51A12A255B6200F2096B /* MakeResultTableViewCell.swift */; };
+		B7CA51A42A255B6200F2096B /* MakeResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7CA51A22A255B6200F2096B /* MakeResultTableViewCell.xib */; };
+		B7CA51A62A25622500F2096B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA51A52A25622500F2096B /* TestViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1684B406206F8620019EDBEF /* Pods-self_fortune.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-self_fortune.debug.xcconfig"; path = "Target Support Files/Pods-self_fortune/Pods-self_fortune.debug.xcconfig"; sourceTree = "<group>"; };
+		9F49D09FD9129765B6103B71 /* Pods_self_fortune.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_self_fortune.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B70A32B52A2CD1A2001C98A4 /* FortuneResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FortuneResultViewController.swift; path = self_fortune/View/Make/FortuneResultViewController.swift; sourceTree = SOURCE_ROOT; };
+		B71E089B2A0DC7400046DE16 /* self_fortune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = self_fortune.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B71E089E2A0DC7400046DE16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B71E08A02A0DC7400046DE16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B71E08A52A0DC7400046DE16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B71E08A72A0DC7450046DE16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B71E08AA2A0DC7450046DE16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B71E08AC2A0DC7450046DE16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B71E08B22A0E15010046DE16 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B71E08BF2A0E1B600046DE16 /* FortuneSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneSecondViewController.swift; sourceTree = "<group>"; };
+		B71E08C12A0E201E0046DE16 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B71E08C32A0E20360046DE16 /* MakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeViewController.swift; sourceTree = "<group>"; };
+		B71E08C52A0E204C0046DE16 /* FortuneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneViewController.swift; sourceTree = "<group>"; };
+		B7BAA8BE2A3F3063008BA193 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		B7BAA8BF2A3F3063008BA193 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B7C3628D2A31DD2A009BD3AC /* self_fortune.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = self_fortune.xcdatamodel; sourceTree = "<group>"; };
+		B7CA518D2A2425A300F2096B /* MakeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeListViewController.swift; sourceTree = "<group>"; };
+		B7CA518F2A24272500F2096B /* MakeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeListTableViewCell.swift; sourceTree = "<group>"; };
+		B7CA51902A24272500F2096B /* MakeListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakeListTableViewCell.xib; sourceTree = "<group>"; };
+		B7CA51932A2436CF00F2096B /* MakeResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeResultViewController.swift; sourceTree = "<group>"; };
+		B7CA51A12A255B6200F2096B /* MakeResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeResultTableViewCell.swift; sourceTree = "<group>"; };
+		B7CA51A22A255B6200F2096B /* MakeResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakeResultTableViewCell.xib; sourceTree = "<group>"; };
+		B7CA51A52A25622500F2096B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		FB97805A16EE996D57289DD2 /* Pods-self_fortune.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-self_fortune.release.xcconfig"; path = "Target Support Files/Pods-self_fortune/Pods-self_fortune.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B71E08982A0DC7400046DE16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6ED67BEB05A4627334FA82 /* Pods_self_fortune.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B71E08922A0DC7400046DE16 = {
+			isa = PBXGroup;
+			children = (
+				B71E089D2A0DC7400046DE16 /* self_fortune */,
+				B71E089C2A0DC7400046DE16 /* Products */,
+				D6499FBFCD0B16FAFC03315C /* Pods */,
+				E619889777289B2F2230D569 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B71E089C2A0DC7400046DE16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B71E089B2A0DC7400046DE16 /* self_fortune.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B71E089D2A0DC7400046DE16 /* self_fortune */ = {
+			isa = PBXGroup;
+			children = (
+				B71E089E2A0DC7400046DE16 /* AppDelegate.swift */,
+				B71E08A02A0DC7400046DE16 /* SceneDelegate.swift */,
+				B71E08BA2A0E15BD0046DE16 /* View */,
+				B71E08A42A0DC7400046DE16 /* Main.storyboard */,
+				B71E08A72A0DC7450046DE16 /* Assets.xcassets */,
+				B71E08A92A0DC7450046DE16 /* LaunchScreen.storyboard */,
+				B71E08AC2A0DC7450046DE16 /* Info.plist */,
+				B7C3628C2A31DD2A009BD3AC /* self_fortune.xcdatamodeld */,
+			);
+			path = self_fortune;
+			sourceTree = "<group>";
+		};
+		B71E08BA2A0E15BD0046DE16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B71E08BD2A0E1B030046DE16 /* Home */,
+				B71E08BC2A0E1AF20046DE16 /* Fortune */,
+				B71E08BE2A0E1B100046DE16 /* Make */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B71E08BC2A0E1AF20046DE16 /* Fortune */ = {
+			isa = PBXGroup;
+			children = (
+				B71E08B22A0E15010046DE16 /* MainViewController.swift */,
+				B71E08C52A0E204C0046DE16 /* FortuneViewController.swift */,
+				B71E08BF2A0E1B600046DE16 /* FortuneSecondViewController.swift */,
+				B70A32B52A2CD1A2001C98A4 /* FortuneResultViewController.swift */,
+			);
+			path = Fortune;
+			sourceTree = "<group>";
+		};
+		B71E08BD2A0E1B030046DE16 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B71E08C12A0E201E0046DE16 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B71E08BE2A0E1B100046DE16 /* Make */ = {
+			isa = PBXGroup;
+			children = (
+				B71E08C32A0E20360046DE16 /* MakeViewController.swift */,
+				B7CA518D2A2425A300F2096B /* MakeListViewController.swift */,
+				B7CA518F2A24272500F2096B /* MakeListTableViewCell.swift */,
+				B7CA51902A24272500F2096B /* MakeListTableViewCell.xib */,
+				B7CA51932A2436CF00F2096B /* MakeResultViewController.swift */,
+				B7CA51A72A2589F900F2096B /* Test */,
+			);
+			path = Make;
+			sourceTree = "<group>";
+		};
+		B7CA51A72A2589F900F2096B /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				B7CA51A52A25622500F2096B /* TestViewController.swift */,
+				B7CA51A12A255B6200F2096B /* MakeResultTableViewCell.swift */,
+				B7CA51A22A255B6200F2096B /* MakeResultTableViewCell.xib */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		D6499FBFCD0B16FAFC03315C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1684B406206F8620019EDBEF /* Pods-self_fortune.debug.xcconfig */,
+				FB97805A16EE996D57289DD2 /* Pods-self_fortune.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E619889777289B2F2230D569 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F49D09FD9129765B6103B71 /* Pods_self_fortune.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B71E089A2A0DC7400046DE16 /* self_fortune */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B71E08AF2A0DC7450046DE16 /* Build configuration list for PBXNativeTarget "self_fortune" */;
+			buildPhases = (
+				57746DCB3C8B1D71C969F5D6 /* [CP] Check Pods Manifest.lock */,
+				B71E08972A0DC7400046DE16 /* Sources */,
+				B71E08982A0DC7400046DE16 /* Frameworks */,
+				B71E08992A0DC7400046DE16 /* Resources */,
+				8E9D4C0B3AD1D38B323D7F4E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = self_fortune;
+			productName = self_fortune;
+			productReference = B71E089B2A0DC7400046DE16 /* self_fortune.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B71E08932A0DC7400046DE16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B71E089A2A0DC7400046DE16 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = B71E08962A0DC7400046DE16 /* Build configuration list for PBXProject "self_fortune" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = B71E08922A0DC7400046DE16;
+			productRefGroup = B71E089C2A0DC7400046DE16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B71E089A2A0DC7400046DE16 /* self_fortune */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B71E08992A0DC7400046DE16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7CA51A42A255B6200F2096B /* MakeResultTableViewCell.xib in Resources */,
+				B71E08AB2A0DC7450046DE16 /* LaunchScreen.storyboard in Resources */,
+				B7CA51922A24272500F2096B /* MakeListTableViewCell.xib in Resources */,
+				B71E08A82A0DC7450046DE16 /* Assets.xcassets in Resources */,
+				B71E08A62A0DC7400046DE16 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57746DCB3C8B1D71C969F5D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-self_fortune-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E9D4C0B3AD1D38B323D7F4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-self_fortune/Pods-self_fortune-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-self_fortune/Pods-self_fortune-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-self_fortune/Pods-self_fortune-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B71E08972A0DC7400046DE16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7CA518E2A2425A300F2096B /* MakeListViewController.swift in Sources */,
+				B7CA51942A2436CF00F2096B /* MakeResultViewController.swift in Sources */,
+				B71E08C22A0E201E0046DE16 /* HomeViewController.swift in Sources */,
+				B71E089F2A0DC7400046DE16 /* AppDelegate.swift in Sources */,
+				B7CA51912A24272500F2096B /* MakeListTableViewCell.swift in Sources */,
+				B71E08A12A0DC7400046DE16 /* SceneDelegate.swift in Sources */,
+				B7CA51A32A255B6200F2096B /* MakeResultTableViewCell.swift in Sources */,
+				B71E08C62A0E204C0046DE16 /* FortuneViewController.swift in Sources */,
+				B71E08B32A0E15010046DE16 /* MainViewController.swift in Sources */,
+				B70A32B62A2CD1A2001C98A4 /* FortuneResultViewController.swift in Sources */,
+				B71E08C42A0E20360046DE16 /* MakeViewController.swift in Sources */,
+				B7C3628E2A31DD2A009BD3AC /* self_fortune.xcdatamodeld in Sources */,
+				B7CA51A62A25622500F2096B /* TestViewController.swift in Sources */,
+				B71E08C02A0E1B600046DE16 /* FortuneSecondViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B71E08A42A0DC7400046DE16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B71E08A52A0DC7400046DE16 /* Base */,
+				B7BAA8BE2A3F3063008BA193 /* ja */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B71E08A92A0DC7450046DE16 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B71E08AA2A0DC7450046DE16 /* Base */,
+				B7BAA8BF2A3F3063008BA193 /* ja */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B71E08AD2A0DC7450046DE16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B71E08AE2A0DC7450046DE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B71E08B02A0DC7450046DE16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1684B406206F8620019EDBEF /* Pods-self_fortune.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJVWD9ZV84;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = self_fortune/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryuji.self-fortune";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B71E08B12A0DC7450046DE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB97805A16EE996D57289DD2 /* Pods-self_fortune.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJVWD9ZV84;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = self_fortune/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryuji.self-fortune";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B71E08962A0DC7400046DE16 /* Build configuration list for PBXProject "self_fortune" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B71E08AD2A0DC7450046DE16 /* Debug */,
+				B71E08AE2A0DC7450046DE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B71E08AF2A0DC7450046DE16 /* Build configuration list for PBXNativeTarget "self_fortune" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B71E08B02A0DC7450046DE16 /* Debug */,
+				B71E08B12A0DC7450046DE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B7C3628C2A31DD2A009BD3AC /* self_fortune.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B7C3628D2A31DD2A009BD3AC /* self_fortune.xcdatamodel */,
+			);
+			currentVersion = B7C3628D2A31DD2A009BD3AC /* self_fortune.xcdatamodel */;
+			path = self_fortune.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B71E08932A0DC7400046DE16 /* Project object */;
+}

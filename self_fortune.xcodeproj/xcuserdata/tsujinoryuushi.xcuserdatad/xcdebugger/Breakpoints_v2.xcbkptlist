@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6D18CC21-1268-4063-801F-36A8BF32E7D0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B796DDD2-D851-4B79-BC97-9376EDE401C6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "self_fortune/View/Make/MakeListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FAD212C0-6AAB-4D44-9E5F-EAD91F4D4842"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "self_fortune/View/Make/MakeListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "80EEE3D6-B424-4817-8BD2-980C3BD0DBD5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "self_fortune/View/Make/MakeListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "80EEE3D6-B424-4817-8BD2-980C3BD0DBD5 - e363f35555e07aaa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "self_fortune.MakeListViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "self_fortune"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsujinoryuushi/Desktop/%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA/self_fortune/self_fortune/View/Make/MakeListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "146"
+                  endingLineNumber = "146"
+                  offsetFromSymbolStart = "1041">
+               </Location>
+               <Location
+                  uuid = "80EEE3D6-B424-4817-8BD2-980C3BD0DBD5 - e363f35555e07aaa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "self_fortune.MakeListViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "self_fortune"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsujinoryuushi/Desktop/%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA/self_fortune/self_fortune/View/Make/MakeListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "146"
+                  endingLineNumber = "146"
+                  offsetFromSymbolStart = "888">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F1439572-AB5C-442B-B331-A96F0B83389C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "self_fortune/View/Make/MakeListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F1439572-AB5C-442B-B331-A96F0B83389C - e363f35555e07ba2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "self_fortune.MakeListViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "self_fortune"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsujinoryuushi/Desktop/%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA/self_fortune/self_fortune/View/Make/MakeListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "154"
+                  endingLineNumber = "154"
+                  offsetFromSymbolStart = "2252">
+               </Location>
+               <Location
+                  uuid = "F1439572-AB5C-442B-B331-A96F0B83389C - e363f35555e07ba2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "self_fortune.MakeListViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "self_fortune"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsujinoryuushi/Desktop/%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA/self_fortune/self_fortune/View/Make/MakeListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "154"
+                  endingLineNumber = "154"
+                  offsetFromSymbolStart = "2443">
+               </Location>
+               <Location
+                  uuid = "F1439572-AB5C-442B-B331-A96F0B83389C - e363f35555e07ba2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "self_fortune.MakeListViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "self_fortune"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsujinoryuushi/Desktop/%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA/self_fortune/self_fortune/View/Make/MakeListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "154"
+                  endingLineNumber = "154"
+                  offsetFromSymbolStart = "2012">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D62971EE-0F3D-4626-8933-6B9F354AD53D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "self_fortune/View/Make/MakeListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

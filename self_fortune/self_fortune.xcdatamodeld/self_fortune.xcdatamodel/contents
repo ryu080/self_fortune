@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Fortune" representedClassName="Fortune" syncable="YES" codeGenerationType="class">
+        <attribute name="adviceText" optional="YES" attributeType="String"/>
+        <attribute name="affinityText" optional="YES" attributeType="String"/>
+        <attribute name="fortune" optional="YES" attributeType="String"/>
+        <attribute name="fortuneName" optional="YES" attributeType="String"/>
+        <attribute name="fortuneRate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="healthRate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="healthText" optional="YES" attributeType="String"/>
+        <attribute name="jobRate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="jobText" optional="YES" attributeType="String"/>
+        <attribute name="loveRate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="loveText" optional="YES" attributeType="String"/>
+    </entity>
+</model>
