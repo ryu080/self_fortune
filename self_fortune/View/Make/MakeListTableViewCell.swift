@@ -10,10 +10,10 @@ import UIKit
 class MakeListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var fortuneName: UILabel!
-    @IBOutlet weak var checkButton: UIButton!
     var bool:Bool = false
     
     @IBOutlet weak var listView: UIView!
+    @IBOutlet weak var checkLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,18 +27,5 @@ class MakeListTableViewCell: UITableViewCell {
     
     func setup(fortuneName:String){
         self.fortuneName.text = fortuneName
-    }
-    //星のオンオフ
-    func set(bool:Bool){
-        if bool == true {
-            checkButton.setTitle("⭐︎", for: .normal)
-            self.bool = false
-        }else if bool == false {
-            checkButton.setTitle("⭐️", for: .normal)
-            self.bool = true
-        }
-    }
-    @IBAction func checkButton(_ sender: Any) {
-        bool ? set(bool: bool): set(bool: bool)
     }
 }

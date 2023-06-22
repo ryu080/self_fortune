@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         // 受け取ったデータをUserDefaultsに保存する
+
         return true
     }
 

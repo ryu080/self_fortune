@@ -32,7 +32,7 @@
 /* Begin PBXFileReference section */
 		1684B406206F8620019EDBEF /* Pods-self_fortune.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-self_fortune.debug.xcconfig"; path = "Target Support Files/Pods-self_fortune/Pods-self_fortune.debug.xcconfig"; sourceTree = "<group>"; };
 		9F49D09FD9129765B6103B71 /* Pods_self_fortune.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_self_fortune.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B70A32B52A2CD1A2001C98A4 /* FortuneResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FortuneResultViewController.swift; path = self_fortune/View/Make/FortuneResultViewController.swift; sourceTree = SOURCE_ROOT; };
+		B70A32B52A2CD1A2001C98A4 /* FortuneResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FortuneResultViewController.swift; path = self_fortune/View/Trash/FortuneResultViewController.swift; sourceTree = SOURCE_ROOT; };
 		B71E089B2A0DC7400046DE16 /* self_fortune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = self_fortune.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71E089E2A0DC7400046DE16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B71E08A02A0DC7400046DE16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		B71E08BA2A0E15BD0046DE16 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B71E08BD2A0E1B030046DE16 /* Home */,
+				B71E08BD2A0E1B030046DE16 /* Trash */,
 				B71E08BC2A0E1AF20046DE16 /* Fortune */,
 				B71E08BE2A0E1B100046DE16 /* Make */,
 			);
@@ -118,41 +118,33 @@
 			children = (
 				B71E08B22A0E15010046DE16 /* MainViewController.swift */,
 				B71E08C52A0E204C0046DE16 /* FortuneViewController.swift */,
-				B71E08BF2A0E1B600046DE16 /* FortuneSecondViewController.swift */,
-				B70A32B52A2CD1A2001C98A4 /* FortuneResultViewController.swift */,
+				B7CA51A52A25622500F2096B /* TestViewController.swift */,
+				B7CA51A12A255B6200F2096B /* MakeResultTableViewCell.swift */,
+				B7CA51A22A255B6200F2096B /* MakeResultTableViewCell.xib */,
 			);
 			path = Fortune;
 			sourceTree = "<group>";
 		};
-		B71E08BD2A0E1B030046DE16 /* Home */ = {
+		B71E08BD2A0E1B030046DE16 /* Trash */ = {
 			isa = PBXGroup;
 			children = (
 				B71E08C12A0E201E0046DE16 /* HomeViewController.swift */,
+				B71E08BF2A0E1B600046DE16 /* FortuneSecondViewController.swift */,
+				B70A32B52A2CD1A2001C98A4 /* FortuneResultViewController.swift */,
+				B71E08C32A0E20360046DE16 /* MakeViewController.swift */,
 			);
-			path = Home;
+			path = Trash;
 			sourceTree = "<group>";
 		};
 		B71E08BE2A0E1B100046DE16 /* Make */ = {
 			isa = PBXGroup;
 			children = (
-				B71E08C32A0E20360046DE16 /* MakeViewController.swift */,
 				B7CA518D2A2425A300F2096B /* MakeListViewController.swift */,
 				B7CA518F2A24272500F2096B /* MakeListTableViewCell.swift */,
 				B7CA51902A24272500F2096B /* MakeListTableViewCell.xib */,
 				B7CA51932A2436CF00F2096B /* MakeResultViewController.swift */,
-				B7CA51A72A2589F900F2096B /* Test */,
 			);
 			path = Make;
-			sourceTree = "<group>";
-		};
-		B7CA51A72A2589F900F2096B /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				B7CA51A52A25622500F2096B /* TestViewController.swift */,
-				B7CA51A12A255B6200F2096B /* MakeResultTableViewCell.swift */,
-				B7CA51A22A255B6200F2096B /* MakeResultTableViewCell.xib */,
-			);
-			name = Test;
 			sourceTree = "<group>";
 		};
 		D6499FBFCD0B16FAFC03315C /* Pods */ = {

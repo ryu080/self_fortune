@@ -205,7 +205,12 @@ extension MakeListViewController: UITableViewDataSource {
             let date = fortuneListController.fortuneItems[indexPath.row]
             cell.setup(fortuneName: date.fortuneName)
             cell.listView.backgroundColor = UIColor.clear
-            cell.accessoryType = indexPath.row == selectedIndexPath ? .checkmark : .none
+            if indexPath.row == selectedIndexPath {
+                cell.checkLabel.text = "⭐️"
+            }else {
+                cell.checkLabel.text = "⭐︎"
+            }
+            //cell.accessoryType = indexPath.row == selectedIndexPath ? .checkmark : .none
             return cell
         }
         return MakeListTableViewCell()

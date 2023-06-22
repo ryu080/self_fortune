@@ -164,6 +164,7 @@ class MakeResultViewController: UIViewController {
         if segue.identifier == "createExitSegue" {
             let title = sender as! String
             info = InfoFortune(fortuneName: title, fortune: fortuneTextView.text, fortuneRate: fortuneCount, jobText: jobTextView.text, jobRate: jobCount, loveText: loveTextView.text, loveRate: loveCount, healthText: healthTextView.text, healthRate: healthCount, adviceText: adviceTextView.text )//, affinityText: affinityTextView.text)
+            delegate.info = info
         }else if segue.identifier == "editExitSegue" {
             var title = ""
             if let date = info{
