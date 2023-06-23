@@ -8,31 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		7E6ED67BEB05A4627334FA82 /* Pods_self_fortune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F49D09FD9129765B6103B71 /* Pods_self_fortune.framework */; };
-		B70A32B62A2CD1A2001C98A4 /* FortuneResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A32B52A2CD1A2001C98A4 /* FortuneResultViewController.swift */; };
 		B71E089F2A0DC7400046DE16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E089E2A0DC7400046DE16 /* AppDelegate.swift */; };
 		B71E08A12A0DC7400046DE16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E08A02A0DC7400046DE16 /* SceneDelegate.swift */; };
 		B71E08A62A0DC7400046DE16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71E08A42A0DC7400046DE16 /* Main.storyboard */; };
 		B71E08A82A0DC7450046DE16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71E08A72A0DC7450046DE16 /* Assets.xcassets */; };
 		B71E08AB2A0DC7450046DE16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71E08A92A0DC7450046DE16 /* LaunchScreen.storyboard */; };
 		B71E08B32A0E15010046DE16 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E08B22A0E15010046DE16 /* MainViewController.swift */; };
-		B71E08C02A0E1B600046DE16 /* FortuneSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E08BF2A0E1B600046DE16 /* FortuneSecondViewController.swift */; };
-		B71E08C22A0E201E0046DE16 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E08C12A0E201E0046DE16 /* HomeViewController.swift */; };
-		B71E08C42A0E20360046DE16 /* MakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E08C32A0E20360046DE16 /* MakeViewController.swift */; };
 		B71E08C62A0E204C0046DE16 /* FortuneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E08C52A0E204C0046DE16 /* FortuneViewController.swift */; };
+		B759023D2A45A4BC002B850D /* EditFortuneTellingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759023C2A45A4BC002B850D /* EditFortuneTellingViewController.swift */; };
+		B759023F2A45B325002B850D /* EditFortuneTellingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759023E2A45B325002B850D /* EditFortuneTellingTableViewCell.swift */; };
+		B759B5242A44709100528B45 /* FortuneDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759B5232A44709000528B45 /* FortuneDoViewController.swift */; };
+		B759B5262A44724F00528B45 /* FortuneDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759B5252A44724F00528B45 /* FortuneDoTableViewCell.swift */; };
 		B7C3628E2A31DD2A009BD3AC /* self_fortune.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7C3628C2A31DD2A009BD3AC /* self_fortune.xcdatamodeld */; };
 		B7CA518E2A2425A300F2096B /* MakeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA518D2A2425A300F2096B /* MakeListViewController.swift */; };
 		B7CA51912A24272500F2096B /* MakeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA518F2A24272500F2096B /* MakeListTableViewCell.swift */; };
 		B7CA51922A24272500F2096B /* MakeListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7CA51902A24272500F2096B /* MakeListTableViewCell.xib */; };
 		B7CA51942A2436CF00F2096B /* MakeResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA51932A2436CF00F2096B /* MakeResultViewController.swift */; };
 		B7CA51A32A255B6200F2096B /* MakeResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA51A12A255B6200F2096B /* MakeResultTableViewCell.swift */; };
-		B7CA51A42A255B6200F2096B /* MakeResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7CA51A22A255B6200F2096B /* MakeResultTableViewCell.xib */; };
 		B7CA51A62A25622500F2096B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA51A52A25622500F2096B /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1684B406206F8620019EDBEF /* Pods-self_fortune.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-self_fortune.debug.xcconfig"; path = "Target Support Files/Pods-self_fortune/Pods-self_fortune.debug.xcconfig"; sourceTree = "<group>"; };
 		9F49D09FD9129765B6103B71 /* Pods_self_fortune.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_self_fortune.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B70A32B52A2CD1A2001C98A4 /* FortuneResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FortuneResultViewController.swift; path = self_fortune/View/Trash/FortuneResultViewController.swift; sourceTree = SOURCE_ROOT; };
 		B71E089B2A0DC7400046DE16 /* self_fortune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = self_fortune.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71E089E2A0DC7400046DE16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B71E08A02A0DC7400046DE16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,10 +39,11 @@
 		B71E08AA2A0DC7450046DE16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B71E08AC2A0DC7450046DE16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B71E08B22A0E15010046DE16 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		B71E08BF2A0E1B600046DE16 /* FortuneSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneSecondViewController.swift; sourceTree = "<group>"; };
-		B71E08C12A0E201E0046DE16 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		B71E08C32A0E20360046DE16 /* MakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeViewController.swift; sourceTree = "<group>"; };
 		B71E08C52A0E204C0046DE16 /* FortuneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneViewController.swift; sourceTree = "<group>"; };
+		B759023C2A45A4BC002B850D /* EditFortuneTellingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditFortuneTellingViewController.swift; path = self_fortune/View/Make/EditFortuneTellingViewController.swift; sourceTree = SOURCE_ROOT; };
+		B759023E2A45B325002B850D /* EditFortuneTellingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFortuneTellingTableViewCell.swift; sourceTree = "<group>"; };
+		B759B5232A44709000528B45 /* FortuneDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneDoViewController.swift; sourceTree = "<group>"; };
+		B759B5252A44724F00528B45 /* FortuneDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneDoTableViewCell.swift; sourceTree = "<group>"; };
 		B7BAA8BE2A3F3063008BA193 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		B7BAA8BF2A3F3063008BA193 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		B7C3628D2A31DD2A009BD3AC /* self_fortune.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = self_fortune.xcdatamodel; sourceTree = "<group>"; };
@@ -53,7 +52,6 @@
 		B7CA51902A24272500F2096B /* MakeListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakeListTableViewCell.xib; sourceTree = "<group>"; };
 		B7CA51932A2436CF00F2096B /* MakeResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeResultViewController.swift; sourceTree = "<group>"; };
 		B7CA51A12A255B6200F2096B /* MakeResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeResultTableViewCell.swift; sourceTree = "<group>"; };
-		B7CA51A22A255B6200F2096B /* MakeResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakeResultTableViewCell.xib; sourceTree = "<group>"; };
 		B7CA51A52A25622500F2096B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		FB97805A16EE996D57289DD2 /* Pods-self_fortune.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-self_fortune.release.xcconfig"; path = "Target Support Files/Pods-self_fortune/Pods-self_fortune.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,7 +104,6 @@
 		B71E08BA2A0E15BD0046DE16 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B71E08BD2A0E1B030046DE16 /* Trash */,
 				B71E08BC2A0E1AF20046DE16 /* Fortune */,
 				B71E08BE2A0E1B100046DE16 /* Make */,
 			);
@@ -120,20 +117,10 @@
 				B71E08C52A0E204C0046DE16 /* FortuneViewController.swift */,
 				B7CA51A52A25622500F2096B /* TestViewController.swift */,
 				B7CA51A12A255B6200F2096B /* MakeResultTableViewCell.swift */,
-				B7CA51A22A255B6200F2096B /* MakeResultTableViewCell.xib */,
+				B759B5232A44709000528B45 /* FortuneDoViewController.swift */,
+				B759B5252A44724F00528B45 /* FortuneDoTableViewCell.swift */,
 			);
 			path = Fortune;
-			sourceTree = "<group>";
-		};
-		B71E08BD2A0E1B030046DE16 /* Trash */ = {
-			isa = PBXGroup;
-			children = (
-				B71E08C12A0E201E0046DE16 /* HomeViewController.swift */,
-				B71E08BF2A0E1B600046DE16 /* FortuneSecondViewController.swift */,
-				B70A32B52A2CD1A2001C98A4 /* FortuneResultViewController.swift */,
-				B71E08C32A0E20360046DE16 /* MakeViewController.swift */,
-			);
-			path = Trash;
 			sourceTree = "<group>";
 		};
 		B71E08BE2A0E1B100046DE16 /* Make */ = {
@@ -143,6 +130,8 @@
 				B7CA518F2A24272500F2096B /* MakeListTableViewCell.swift */,
 				B7CA51902A24272500F2096B /* MakeListTableViewCell.xib */,
 				B7CA51932A2436CF00F2096B /* MakeResultViewController.swift */,
+				B759023C2A45A4BC002B850D /* EditFortuneTellingViewController.swift */,
+				B759023E2A45B325002B850D /* EditFortuneTellingTableViewCell.swift */,
 			);
 			path = Make;
 			sourceTree = "<group>";
@@ -225,7 +214,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7CA51A42A255B6200F2096B /* MakeResultTableViewCell.xib in Resources */,
 				B71E08AB2A0DC7450046DE16 /* LaunchScreen.storyboard in Resources */,
 				B7CA51922A24272500F2096B /* MakeListTableViewCell.xib in Resources */,
 				B71E08A82A0DC7450046DE16 /* Assets.xcassets in Resources */,
@@ -282,20 +270,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B759B5262A44724F00528B45 /* FortuneDoTableViewCell.swift in Sources */,
 				B7CA518E2A2425A300F2096B /* MakeListViewController.swift in Sources */,
 				B7CA51942A2436CF00F2096B /* MakeResultViewController.swift in Sources */,
-				B71E08C22A0E201E0046DE16 /* HomeViewController.swift in Sources */,
 				B71E089F2A0DC7400046DE16 /* AppDelegate.swift in Sources */,
 				B7CA51912A24272500F2096B /* MakeListTableViewCell.swift in Sources */,
 				B71E08A12A0DC7400046DE16 /* SceneDelegate.swift in Sources */,
 				B7CA51A32A255B6200F2096B /* MakeResultTableViewCell.swift in Sources */,
+				B759B5242A44709100528B45 /* FortuneDoViewController.swift in Sources */,
 				B71E08C62A0E204C0046DE16 /* FortuneViewController.swift in Sources */,
 				B71E08B32A0E15010046DE16 /* MainViewController.swift in Sources */,
-				B70A32B62A2CD1A2001C98A4 /* FortuneResultViewController.swift in Sources */,
-				B71E08C42A0E20360046DE16 /* MakeViewController.swift in Sources */,
 				B7C3628E2A31DD2A009BD3AC /* self_fortune.xcdatamodeld in Sources */,
+				B759023F2A45B325002B850D /* EditFortuneTellingTableViewCell.swift in Sources */,
+				B759023D2A45A4BC002B850D /* EditFortuneTellingViewController.swift in Sources */,
 				B7CA51A62A25622500F2096B /* TestViewController.swift in Sources */,
-				B71E08C02A0E1B600046DE16 /* FortuneSecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
