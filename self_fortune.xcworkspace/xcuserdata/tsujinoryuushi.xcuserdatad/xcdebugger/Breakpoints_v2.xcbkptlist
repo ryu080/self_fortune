@@ -221,6 +221,36 @@
                   endingLineNumber = "20"
                   offsetFromSymbolStart = "494">
                </Location>
+               <Location
+                  uuid = "6E77DF74-6D83-4F91-9474-5452C42FB4FA - e6846ee94d315c27"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "self_fortune.TestViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "self_fortune"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsujinoryuushi/Desktop/%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA/self_fortune/self_fortune/View/Fortune/TestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "476">
+               </Location>
+               <Location
+                  uuid = "6E77DF74-6D83-4F91-9474-5452C42FB4FA - e6846ee94d315c27"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "self_fortune.TestViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "self_fortune"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsujinoryuushi/Desktop/%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA/self_fortune/self_fortune/View/Fortune/TestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "580">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -299,6 +329,36 @@
                   endingLineNumber = "23"
                   offsetFromSymbolStart = "1004">
                </Location>
+               <Location
+                  uuid = "48A7CC4B-A2C2-446C-83CC-D3F1F42E2AD4 - e6846ee94d315d84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "self_fortune.TestViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "self_fortune"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsujinoryuushi/Desktop/%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA/self_fortune/self_fortune/View/Fortune/TestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "704">
+               </Location>
+               <Location
+                  uuid = "48A7CC4B-A2C2-446C-83CC-D3F1F42E2AD4 - e6846ee94d315d84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "self_fortune.TestViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "self_fortune"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsujinoryuushi/Desktop/%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA/self_fortune/self_fortune/View/Fortune/TestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "852">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -361,6 +421,36 @@
                   startingLineNumber = "29"
                   endingLineNumber = "29"
                   offsetFromSymbolStart = "2707">
+               </Location>
+               <Location
+                  uuid = "6F6E5396-7D8A-4706-9C66-EF59BCD1397C - e6846ee94d315d5e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "self_fortune.TestViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "self_fortune"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsujinoryuushi/Desktop/%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA/self_fortune/self_fortune/View/Fortune/TestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1496">
+               </Location>
+               <Location
+                  uuid = "6F6E5396-7D8A-4706-9C66-EF59BCD1397C - e6846ee94d315d5e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "self_fortune.TestViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "self_fortune"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsujinoryuushi/Desktop/%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA/self_fortune/self_fortune/View/Fortune/TestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1956">
                </Location>
             </Locations>
          </BreakpointContent>

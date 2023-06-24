@@ -14,15 +14,15 @@ class EditFortuneTellingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureTableView()
+//        configureTableView()
 
     }
+    
     func configureTableView() {
         editTableView.delegate = self
         editTableView.dataSource = self
         editTableView.rowHeight = UITableView.automaticDimension
         editTableView.estimatedRowHeight = 50
-        editTableView.register(UINib(nibName: "EditFortuneTellingTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell4")
     }
 }
 
@@ -101,7 +101,7 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
 }
 extension EditFortuneTellingViewController: UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return UITableView.automaticDimension
-        }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//            return UITableView.automaticDimension
+//        }
 }

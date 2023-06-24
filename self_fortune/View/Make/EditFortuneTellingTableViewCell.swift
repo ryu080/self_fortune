@@ -18,6 +18,7 @@ class EditFortuneTellingTableViewCell: UITableViewCell{
     
     @IBAction func templateActionButton(_ sender: Any) {
         
+        
     }
     
     override func awakeFromNib() {
@@ -27,10 +28,10 @@ class EditFortuneTellingTableViewCell: UITableViewCell{
     }
     
     func configureTextView() {
-        affinityTextView.isScrollEnabled = false
-        affinityTextView.textContainerInset = UIEdgeInsets.zero
-        affinityTextView.textContainer.lineFragmentPadding = 0
-        affinityTextView.delegate = self
+        affinityTextView?.isScrollEnabled = false
+        affinityTextView?.textContainerInset = .zero
+        affinityTextView?.textContainer.lineFragmentPadding = 0
+        affinityTextView?.delegate = self
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -41,9 +42,9 @@ class EditFortuneTellingTableViewCell: UITableViewCell{
 }
 extension EditFortuneTellingTableViewCell: UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
-            adjustTextViewHeight()
-        }
-        
+        adjustTextViewHeight()
+    }
+    
     func adjustTextViewHeight() {
         let fixedWidth = affinityTextView.frame.size.width
         let newSize = affinityTextView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
