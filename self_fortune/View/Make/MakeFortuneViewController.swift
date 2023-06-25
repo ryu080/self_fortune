@@ -20,6 +20,14 @@ class MakeFortuneViewController: UIViewController {
     private let placeholder = "相性の説明文を入力してください。\n\n説明文は、420文字・20行以内で記載してください。"
     private let textLength = 420
     private let textView = UITextView()
+    var addFortune = true
+    var info: InfoFortune?
+    private let delegate = UIApplication.shared.delegate as! AppDelegate
+    func initialize(){
+        affinityTextField.text = ""
+        affinityTextView.text = ""
+        adviceTextView.text = ""
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         affinityTextView.delegate = self
@@ -34,6 +42,14 @@ class MakeFortuneViewController: UIViewController {
         let swipeDownGesture = UISwipeGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         swipeDownGesture.direction = .down
         self.view.addGestureRecognizer(swipeDownGesture)
+        if let date = info {
+            showPercentLabel.text = "\(date.percent)%"
+            percentSlider.value = Float(date.percent)
+            affinityTextField.text = date.affinity
+            affinityTextView.text = date.affinityText
+            adviceTextView.text = date.adviceText
+                        
+        }
     }
     
     @objc func dismissKeyboard() {
@@ -52,15 +68,16 @@ class MakeFortuneViewController: UIViewController {
         
         //スペーサーとボタンをツールバーに追加
         kbToolbar.items = [spacer,kbDoneButton]
-
-
+        
         //textViewのキーボードのinputAccessoryViewに作成したツールバーを設定
         affinityTextView.inputAccessoryView = kbToolbar
         adviceTextView.inputAccessoryView = kbToolbar
     }
     @IBAction func sliderChanged(_ sender: UISlider) {
-        showPercentLabel.text = "\(Int(sender.value))%"
+        let percent = Int(sender.value)
+        showPercentLabel.text = "\(percent)%"
     }
+    
     @IBAction func templateButton(_ sender: Any) {
         switch percentSlider.value {
         case 0:
@@ -93,6 +110,64 @@ class MakeFortuneViewController: UIViewController {
             adviceTextView.text = "変わりなどいません一生大切にしましょう"
         }
     }
+    
+    @IBAction func saveButton(_ sender: Any) {
+        
+        if addFortune == true{
+            //情報をMakeListcontrollerに返す
+            var textFieldOnAlert = UITextField()
+            
+            let alert = UIAlertController(title: "タイトルを入力",
+                                          message: nil,
+                                          preferredStyle: .alert)
+            alert.addTextField { textField in
+                textFieldOnAlert = textField
+                textFieldOnAlert.returnKeyType = .done
+            }
+            
+            let doneAction = UIAlertAction(title: "保存", style: .default) { _ in
+                guard let title = textFieldOnAlert.text, !title.isEmpty else {return}
+                
+                self.performSegue(withIdentifier: "createExitSegue", sender: title)
+            }
+            
+            let cancelAction = UIAlertAction(title: "キャンセル", style: .cancel)
+            
+            alert.addAction(doneAction)
+            alert.addAction(cancelAction)
+            present(alert, animated: true)
+        }else {
+            let alert = UIAlertController(title: "編集を終了しますか？",
+                                          message: nil,
+                                          preferredStyle: .alert)
+            
+            let doneAction = UIAlertAction(title: "上書き保存", style: .default) { _ in
+                self.performSegue(withIdentifier: "editExitSegue", sender: sender)
+            }
+            let cancelAction = UIAlertAction(title: "キャンセル", style: .cancel)
+            
+            alert.addAction(doneAction)
+            alert.addAction(cancelAction)
+            present(alert, animated: true)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "createExitSegue" {
+            let title = sender as! String
+            info = InfoFortune(fortuneName: title, percent: Int(percentSlider.value), affinity: affinityTextField.text ?? "", affinityText: affinityTextView.text, adviceText: adviceTextView.text)
+            delegate.info = info
+        }else if segue.identifier == "editExitSegue" {
+            var title = ""
+            if let date = info{
+                 title = date.fortuneName
+            }
+            info = InfoFortune(fortuneName: title, percent: Int(percentSlider.value), affinity: affinityTextField.text ?? "", affinityText: affinityTextView.text, adviceText: adviceTextView.text)
+            delegate.info = info
+        }
+    }
+
+    
 }
 
 extension MakeFortuneViewController: UITextViewDelegate {

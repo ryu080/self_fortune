@@ -9,45 +9,25 @@ import UIKit
 
 class EditFortuneTellingTableViewCell: UITableViewCell{
 
-    @IBOutlet weak var showPercentLabel: UILabel!
-    @IBOutlet weak var affinityTextField: UITextField!
-    @IBOutlet weak var percentSlider: UISlider!
-    @IBOutlet weak var affinityTextView: UITextView!
-    @IBOutlet weak var templateButton: UIButton!
-    @IBOutlet weak var saveButton: UIButton!
     
-    @IBAction func templateActionButton(_ sender: Any) {
-        
-        
-    }
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var showPercentLabel: UILabel!
+    @IBOutlet weak var affinity: UILabel!
+    @IBOutlet weak var affinityText: UILabel!
+    @IBOutlet weak var adviceText: UILabel!
+    @IBOutlet weak var exitButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        configureTextView()
+        
     }
     
-    func configureTextView() {
-        affinityTextView?.isScrollEnabled = false
-        affinityTextView?.textContainerInset = .zero
-        affinityTextView?.textContainer.lineFragmentPadding = 0
-        affinityTextView?.delegate = self
-    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
 
-}
-extension EditFortuneTellingTableViewCell: UITextViewDelegate {
-    func textViewDidChange(_ textView: UITextView) {
-        adjustTextViewHeight()
-    }
-    
-    func adjustTextViewHeight() {
-        let fixedWidth = affinityTextView.frame.size.width
-        let newSize = affinityTextView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
-        affinityTextView.frame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
-    }
 }
