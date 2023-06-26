@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class FortuneDoViewController: UIViewController {
     
@@ -51,6 +52,17 @@ class FortuneDoViewController: UIViewController {
         monthTextField.inputAccessoryView = createToolbar()
         dayTextField.inputAccessoryView = createToolbar()
     }
+    
+    @IBAction func fortuneButton(_ sender: Any) {
+        SVProgressHUD.show(withStatus: "占い中")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+            SVProgressHUD.dismiss()
+            self.performSegue(withIdentifier: "FortuneSegue", sender: sender)
+            print("読込み")
+        }
+
+    }
+
     func createToolbar() -> UIToolbar {
             let toolbar = UIToolbar()
             toolbar.barStyle = .default
