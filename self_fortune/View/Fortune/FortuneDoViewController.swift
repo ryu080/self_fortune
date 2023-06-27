@@ -10,14 +10,27 @@ import SVProgressHUD
 
 class FortuneDoViewController: UIViewController {
     
-    @IBOutlet weak var yearTextField: UITextField!
-    @IBOutlet weak var monthTextField: UITextField!
-    @IBOutlet weak var dayTextField: UITextField!
+    //1人目
+    @IBOutlet weak var familyNameTextField1: UITextField!
+    @IBOutlet weak var firstNameTextField1: UITextField!
+    @IBOutlet weak var yearTextField1: UITextField!
+    @IBOutlet weak var monthTextField1: UITextField!
+    @IBOutlet weak var dayTextField1: UITextField!
+    //2人目
+    @IBOutlet weak var familyNameTextField2: UITextField!
+    @IBOutlet weak var firstNameTextField2: UITextField!
+    @IBOutlet weak var yearTextField2: UITextField!
+    @IBOutlet weak var monthTextField2: UITextField!
+    @IBOutlet weak var dayTextField2: UITextField!
     
-    var yearPickerView: UIPickerView!
-    var monthPickerView: UIPickerView!
-    var dayPickerView: UIPickerView!
-    
+    var yearPickerView1: UIPickerView!
+    var monthPickerView1: UIPickerView!
+    var dayPickerView1: UIPickerView!
+    var yearPickerView2: UIPickerView!
+    var monthPickerView2: UIPickerView!
+    var dayPickerView2: UIPickerView!
+
+
     let years = Array(1930...2023) // 年の範囲
     let months = Array(1...12) // 月の範囲
     let days = Array(1...31) // 日の範囲
@@ -25,32 +38,56 @@ class FortuneDoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // テキストフィールドのデリゲートを設定
-        yearTextField.delegate = self
-        monthTextField.delegate = self
-        dayTextField.delegate = self
+        yearTextField1.delegate = self
+        yearTextField2.delegate = self
+        monthTextField1.delegate = self
+        monthTextField2.delegate = self
+        dayTextField1.delegate = self
+        dayTextField2.delegate = self
         
         // ピッカービューの作成
-        yearPickerView = UIPickerView()
-        monthPickerView = UIPickerView()
-        dayPickerView = UIPickerView()
+        yearPickerView1 = UIPickerView()
+        monthPickerView1 = UIPickerView()
+        dayPickerView1 = UIPickerView()
+        yearPickerView2 = UIPickerView()
+        monthPickerView2 = UIPickerView()
+        dayPickerView2 = UIPickerView()
+
         
         // データソースとデリゲートを設定
-        yearPickerView.dataSource = self
-        yearPickerView.delegate = self
-        monthPickerView.dataSource = self
-        monthPickerView.delegate = self
-        dayPickerView.dataSource = self
-        dayPickerView.delegate = self
+        yearPickerView1.dataSource = self
+        yearPickerView1.delegate = self
+        monthPickerView1.dataSource = self
+        monthPickerView1.delegate = self
+        dayPickerView1.dataSource = self
+        dayPickerView1.delegate = self
+        
+        // データソースとデリゲートを設定
+        yearPickerView2.dataSource = self
+        yearPickerView2.delegate = self
+        monthPickerView2.dataSource = self
+        monthPickerView2.delegate = self
+        dayPickerView2.dataSource = self
+        dayPickerView2.delegate = self
         
         // テキストフィールドのキーボードをピッカービューに置き換える
-        yearTextField.inputView = yearPickerView
-        monthTextField.inputView = monthPickerView
-        dayTextField.inputView = dayPickerView
+        yearTextField1.inputView = yearPickerView1
+        monthTextField1.inputView = monthPickerView1
+        dayTextField1.inputView = dayPickerView1
+        
+        yearTextField2.inputView = yearPickerView1
+        monthTextField2.inputView = monthPickerView1
+        dayTextField2.inputView = dayPickerView1
         
         // ツールバーを設定してキーボードに追加
-        yearTextField.inputAccessoryView = createToolbar()
-        monthTextField.inputAccessoryView = createToolbar()
-        dayTextField.inputAccessoryView = createToolbar()
+        yearTextField1.inputAccessoryView = createToolbar()
+        monthTextField1.inputAccessoryView = createToolbar()
+        dayTextField1.inputAccessoryView = createToolbar()
+        
+        yearTextField2.inputAccessoryView = createToolbar()
+        monthTextField2.inputAccessoryView = createToolbar()
+        dayTextField2.inputAccessoryView = createToolbar()
+
     }
     
     @IBAction func fortuneButton(_ sender: Any) {
@@ -85,12 +122,18 @@ class FortuneDoViewController: UIViewController {
 extension FortuneDoViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         switch textField {
-        case yearTextField:
-            yearPickerView.selectRow(years.firstIndex(of: Int(textField.text ?? "") ?? 1930) ?? 0, inComponent: 0, animated: false)
-        case monthTextField:
-            monthPickerView.selectRow(months.firstIndex(of: Int(textField.text ?? "") ?? 1) ?? 0, inComponent: 0, animated: false)
-        case dayTextField:
-            dayPickerView.selectRow(days.firstIndex(of: Int(textField.text ?? "") ?? 1) ?? 0, inComponent: 0, animated: false)
+        case yearTextField1:
+            yearPickerView1.selectRow(years.firstIndex(of: Int(textField.text ?? "") ?? 2000) ?? 0, inComponent: 0, animated: false)
+        case monthTextField1:
+            monthPickerView1.selectRow(months.firstIndex(of: Int(textField.text ?? "") ?? 1) ?? 0, inComponent: 0, animated: false)
+        case dayTextField1:
+            dayPickerView1.selectRow(days.firstIndex(of: Int(textField.text ?? "") ?? 1) ?? 0, inComponent: 0, animated: false)
+        case yearTextField2:
+            yearPickerView2.selectRow(years.firstIndex(of: Int(textField.text ?? "") ?? 2000) ?? 0, inComponent: 0, animated: false)
+        case monthTextField2:
+            monthPickerView2.selectRow(months.firstIndex(of: Int(textField.text ?? "") ?? 1) ?? 0, inComponent: 0, animated: false)
+        case dayTextField2:
+            dayPickerView2.selectRow(days.firstIndex(of: Int(textField.text ?? "") ?? 1) ?? 0, inComponent: 0, animated: false)
         default:
             break
         }
@@ -104,11 +147,17 @@ extension FortuneDoViewController: UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         switch pickerView {
-        case yearPickerView:
+        case yearPickerView1:
             return years.count
-        case monthPickerView:
+        case monthPickerView1:
             return months.count
-        case dayPickerView:
+        case dayPickerView1:
+            return days.count
+        case yearPickerView2:
+            return years.count
+        case monthPickerView2:
+            return months.count
+        case dayPickerView2:
             return days.count
         default:
             return 0
@@ -120,11 +169,17 @@ extension FortuneDoViewController: UIPickerViewDataSource {
 extension FortuneDoViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         switch pickerView {
-        case yearPickerView:
+        case yearPickerView1:
             return String(years[row])
-        case monthPickerView:
+        case monthPickerView1:
             return String(months[row])
-        case dayPickerView:
+        case dayPickerView1:
+            return String(days[row])
+        case yearPickerView2:
+            return String(years[row])
+        case monthPickerView2:
+            return String(months[row])
+        case dayPickerView2:
             return String(days[row])
         default:
             return nil
@@ -133,12 +188,18 @@ extension FortuneDoViewController: UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         switch pickerView {
-        case yearPickerView:
-            yearTextField.text = String(years[row])
-        case monthPickerView:
-            monthTextField.text = String(months[row])
-        case dayPickerView:
-            dayTextField.text = String(days[row])
+        case yearPickerView1:
+            yearTextField1.text = String(years[row])
+        case monthPickerView1:
+            monthTextField1.text = String(months[row])
+        case dayPickerView1:
+            dayTextField1.text = String(days[row])
+        case yearPickerView2:
+            yearTextField2.text = String(years[row])
+        case monthPickerView2:
+            monthTextField2.text = String(months[row])
+        case dayPickerView2:
+            dayTextField2.text = String(days[row])
         default:
             break
         }
