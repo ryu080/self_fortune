@@ -31,8 +31,8 @@ class FortuneDoViewController: UIViewController {
     var yearPickerView2: UIPickerView!
     var monthPickerView2: UIPickerView!
     var dayPickerView2: UIPickerView!
-
-
+    
+    
     let years = Array(1930...2023) // 年の範囲
     let months = Array(1...12) // 月の範囲
     let days = Array(1...31) // 日の範囲
@@ -40,6 +40,7 @@ class FortuneDoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // 初期値の設定
         yearTextField1.text = "2000年"
         yearTextField1.textColor = .systemBlue
@@ -79,7 +80,7 @@ class FortuneDoViewController: UIViewController {
         yearPickerView2 = UIPickerView()
         monthPickerView2 = UIPickerView()
         dayPickerView2 = UIPickerView()
-
+        
         
         // データソースとデリゲートを設定
         yearPickerView1.dataSource = self
@@ -107,22 +108,22 @@ class FortuneDoViewController: UIViewController {
         dayTextField2.inputView = dayPickerView2
         
         // ツールバーを設定してキーボードに追加
-//ツールバーに完了をつけるか🟠
-//        familyNameTextField1.inputAccessoryView = createToolbar()
-//        firstNameTextField1.inputAccessoryView = createToolbar()
+        //ツールバーに完了をつけるか🟠
+        //        familyNameTextField1.inputAccessoryView = createToolbar()
+        //        firstNameTextField1.inputAccessoryView = createToolbar()
         
         yearTextField1.inputAccessoryView = createToolbar(for: yearTextField1)
         monthTextField1.inputAccessoryView = createToolbar(for: monthTextField1)
         dayTextField1.inputAccessoryView = createToolbar(for: dayTextField1)
         
-//ツールバーに完了をつけるか🟠
-//        familyNameTextField2.inputAccessoryView = createToolbar()
-//        firstNameTextField2.inputAccessoryView = createToolbar()
+        //ツールバーに完了をつけるか🟠
+        //        familyNameTextField2.inputAccessoryView = createToolbar()
+        //        firstNameTextField2.inputAccessoryView = createToolbar()
         
         yearTextField2.inputAccessoryView = createToolbar(for: yearTextField2)
         monthTextField2.inputAccessoryView = createToolbar(for: monthTextField2)
         dayTextField2.inputAccessoryView = createToolbar(for: dayTextField2)
-
+        
         //タップでキーボードを下げる
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(doneButtonTapped))
         self.view.addGestureRecognizer(tapGesture)
@@ -133,14 +134,39 @@ class FortuneDoViewController: UIViewController {
     }
     
     @IBAction func fortuneButton(_ sender: Any) {
-        SVProgressHUD.show(withStatus: "占い中")
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
-            SVProgressHUD.dismiss()
-            self.performSegue(withIdentifier: "FortuneSegue", sender: sender)
-            print("読込み")
+        if let familyName1 = familyNameTextField1.text, !familyName1.isEmpty,
+           let firstName1 = firstNameTextField1.text, !firstName1.isEmpty,
+           let familyName2 = familyNameTextField2.text, !familyName2.isEmpty,
+           let firstName2 = firstNameTextField2.text, !firstName2.isEmpty{
+            SVProgressHUD.show(withStatus: "占い中")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+                SVProgressHUD.dismiss()
+                self.performSegue(withIdentifier: "FortuneSegue", sender: sender)
+                print("読込み")
+            }
+        }else {
+            if familyNameTextField1.text == ""{
+                familyNameTextField1.backgroundColor = UIColor(red: 0.95, green: 0.8, blue: 0.8, alpha: 1.0)
+                familyNameTextField1.attributedPlaceholder = NSAttributedString(string: "姓が未入力です",
+                                                                                attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])            }
+            if firstNameTextField1.text == ""{
+                firstNameTextField1.backgroundColor = UIColor(red: 0.95, green: 0.8, blue: 0.8, alpha: 1.0)
+                firstNameTextField1.attributedPlaceholder = NSAttributedString(string: "名が未入力です",
+                                                                               attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+            }
+            if familyNameTextField2.text == "" {
+                familyNameTextField2.backgroundColor = UIColor(red: 0.95, green: 0.8, blue: 0.8, alpha: 1.0)
+                familyNameTextField2.attributedPlaceholder = NSAttributedString(string: "姓が未入力です",
+                                                                                attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])            }
+            if firstNameTextField2.text == "" {
+                firstNameTextField2.backgroundColor = UIColor(red: 0.95, green: 0.8, blue: 0.8, alpha: 1.0)
+                firstNameTextField2.attributedPlaceholder = NSAttributedString(string: "名が未入力です",
+                                                                               attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+            }
         }
     }
-
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "FortuneSegue" {
             if let editFortuneTellingViewController = segue.destination as? EditFortuneTellingViewController {
@@ -170,24 +196,36 @@ class FortuneDoViewController: UIViewController {
     
     @objc func doneButtonTapped(_ sender: UIBarButtonItem) {
         if let textField = view.viewWithTag(currentTextFieldTag + 1) as? UITextField {
-                textField.becomeFirstResponder() // 次のテキストフィールドにフォーカスを移動
-            } else {
-                if let textField = view.viewWithTag(currentTextFieldTag) as? UITextField {
-                    textField.resignFirstResponder() // キーボードを閉じる
-                }
+            textField.becomeFirstResponder() // 次のテキストフィールドにフォーカスを移動
+        } else {
+            if let textField = view.viewWithTag(currentTextFieldTag) as? UITextField {
+                textField.resignFirstResponder() // キーボードを閉じる
             }
+        }
     }
 }
 extension FortuneDoViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         currentTextFieldTag = textField.tag
         switch textField {
+        case familyNameTextField1:
+            familyNameTextField1.backgroundColor = .white
+            familyNameTextField1.placeholder = ""
+        case firstNameTextField1:
+            firstNameTextField1.backgroundColor = .white
+            firstNameTextField1.placeholder = ""
         case yearTextField1:
             yearPickerView1.selectRow(years.firstIndex(of: Int(textField.text ?? "") ?? 2000) ?? 0, inComponent: 0, animated: false)
         case monthTextField1:
             monthPickerView1.selectRow(months.firstIndex(of: Int(textField.text ?? "") ?? 1) ?? 0, inComponent: 0, animated: false)
         case dayTextField1:
             dayPickerView1.selectRow(days.firstIndex(of: Int(textField.text ?? "") ?? 1) ?? 0, inComponent: 0, animated: false)
+        case familyNameTextField2:
+            familyNameTextField2.backgroundColor = .white
+            familyNameTextField2.placeholder = ""
+        case firstNameTextField2:
+            firstNameTextField2.backgroundColor = .white
+            firstNameTextField2.placeholder = ""
         case yearTextField2:
             yearPickerView2.selectRow(years.firstIndex(of: Int(textField.text ?? "") ?? 2000) ?? 0, inComponent: 0, animated: false)
         case monthTextField2:
@@ -260,22 +298,22 @@ extension FortuneDoViewController: UIPickerViewDelegate {
         switch pickerView {
         case yearPickerView1:
             yearTextField1.text = "\(years[row])年"
-//            yearTextField1.textColor = .black
+            //            yearTextField1.textColor = .black
         case monthPickerView1:
             monthTextField1.text = "\(months[row])月"
-//            monthTextField1.textColor = .black
+            //            monthTextField1.textColor = .black
         case dayPickerView1:
             dayTextField1.text = "\(days[row])日"
-//            dayTextField1.textColor = .black
+            //            dayTextField1.textColor = .black
         case yearPickerView2:
             yearTextField2.text = "\(years[row])年"
-//            yearTextField2.textColor = .black
+            //            yearTextField2.textColor = .black
         case monthPickerView2:
             monthTextField2.text = "\(months[row])月"
-//            monthTextField2.textColor = .black
+            //            monthTextField2.textColor = .black
         case dayPickerView2:
             dayTextField2.text = "\(days[row])日"
-//            dayTextField2.textColor = .black
+            //            dayTextField2.textColor = .black
         default:
             break
         }

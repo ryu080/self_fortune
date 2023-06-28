@@ -59,7 +59,7 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as? EditFortuneTellingTableViewCell {
                 if let date = delegate.info {
                     cell.label1.text = "\((familyName1 ?? "") + (firstName1 ?? ""))さんと"
-                    cell.label2.text = "\((familyName2 ?? "") + (firstName2 ?? ""))さんの相性の良さは..."
+                    cell.label2.text = "\((familyName2 ?? "") + (firstName2 ?? ""))さんの\n相性の良さは..."
                     // cellの背景を透過
                     cell.backgroundColor = UIColor.clear
                     // cell内のcontentViewの背景を透過
