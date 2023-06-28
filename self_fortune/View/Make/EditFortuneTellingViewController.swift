@@ -9,6 +9,10 @@ import UIKit
 
 class EditFortuneTellingViewController: UIViewController {
     let delegate = UIApplication.shared.delegate as! AppDelegate
+    var familyName1:String?
+    var familyName2:String?
+    var firstName1:String?
+    var firstName2:String?
     
     @IBOutlet weak var editTableView: UITableView!
     
@@ -54,8 +58,8 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
         case 0:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as? EditFortuneTellingTableViewCell {
                 if let date = delegate.info {
-                    cell.label1.text = "segueで1人目の名前を送る"
-                    cell.label2.text = "segueで2人目の名前を送る"
+                    cell.label1.text = "\((familyName1 ?? "") + (firstName1 ?? ""))さんと"
+                    cell.label2.text = "\((familyName2 ?? "") + (firstName2 ?? ""))さんの相性の良さは..."
                     // cellの背景を透過
                     cell.backgroundColor = UIColor.clear
                     // cell内のcontentViewの背景を透過
