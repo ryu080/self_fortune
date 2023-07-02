@@ -81,31 +81,31 @@ class MakeFortuneViewController: UIViewController {
     @IBAction func templateButton(_ sender: Any) {
         switch percentSlider.value {
         case 0:
-            affinityTextField.text = "相性最悪"
+            affinityTextField.text = "〜相性最悪〜"
             affinityTextView.text = "2人の関係は極めて困難で、互いに理解し合うことができず、感情的な距離が大きい状態です。\n意見の相違やコミュニケーションの欠如が頻繁に起こり、関係を維持することがほぼ不可能に近い状態です。"
             adviceTextView.text = "関わらないのが身のためです"
         case 1...20:
-            affinityTextField.text = "犬猿の仲"
+            affinityTextField.text = "〜犬猿の仲〜"
             affinityTextView.text = "2人の関係は常に緊張が走り、互いに対立することが多いです。\n相手の性格や行動に対して理解が難しく、意見が衝突しやすい関係です。\nお互いにストレスや不満を抱えがちで、和解するのが難しい状態です。"
             adviceTextView.text = "無理をして付き合う必要はないでしょう"
         case 21...40:
-            affinityTextField.text = "価値観不一致"
+            affinityTextField.text = "〜価値観不一致〜"
             affinityTextView.text = "2人の関係にはいくつかの課題や意見の相違がありますが、それにもかかわらず、まだ関係を修復する余地があります。\nお互いに対話し、解決策を見つけるための努力が必要です。"
             adviceTextView.text = "お互いに寄り添い合えば可能性はあります"
         case 41...60:
-            affinityTextField.text = "普通"
+            affinityTextField.text = "〜普通〜"
             affinityTextView.text = "2人の関係は平穏で特に大きな問題はありませんが、特別な絆や深い理解も感じられません。\nお互いに興味や共通の関心事を持っているかもしれませんが、関係を発展させるためにはさらなる努力が必要です。"
             adviceTextView.text = "お互いに関心を持ちましょう"
         case 61...80:
-            affinityTextField.text = "一緒にいて疲れない"
+            affinityTextField.text = "〜一緒にいて疲れない〜"
             affinityTextView.text = "2人の関係はおおむね良好で、お互いに理解し合い、楽しい時間を過ごすことができます。\nしかし、まだ改善の余地があり、一部の課題に取り組む必要があります。"
             adviceTextView.text = "共通の課題に取り組むとさらに関係がよくなるでしょう"
         case 81...99:
-            affinityTextField.text = "相性最高"
+            affinityTextField.text = "〜相性最高〜"
             affinityTextView.text = "2人の関係はおおむね良好です。\nお互いに支え合い幸せな時間を共有できます。\n相手を尊重し思いやりを持ち、関係をさらに深めるための努力を惜しまないです。"
             adviceTextView.text = "良い思い出をたくさん作り共有することで二人の絆は誰にも断ち切れないでしょう"
         default:
-            affinityTextField.text = "運命の相手"
+            affinityTextField.text = "〜運命の相手〜"
             affinityTextView.text = "2人の関係は完璧です。\nお互いに欠かせない存在です。\n深い絆と信頼があり、お互いの強みを活かし合いながら良いコミュニケーションと協力関係を築いています。\n共通の目標や夢を持ち、互いを支えながら成長していく関係です。"
             adviceTextView.text = "変わりなどいません一生大切にしましょう"
         }

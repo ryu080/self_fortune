@@ -50,7 +50,7 @@ class EditFortuneTellingViewController: UIViewController {
 
 extension EditFortuneTellingViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 7
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -77,6 +77,9 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
                     cell.backgroundColor = UIColor.clear
                     // cell内のcontentViewの背景を透過
                     cell.contentView.backgroundColor = UIColor.clear
+                    cell.showPercentLabel.layer.cornerRadius = 10
+                    cell.showPercentLabel.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+                    cell.showPercentLabel.clipsToBounds = true
                 }
                 cell.isUserInteractionEnabled = false
                 return cell
@@ -89,6 +92,9 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
                     cell.backgroundColor = UIColor.clear
                     // cell内のcontentViewの背景を透過
                     cell.contentView.backgroundColor = UIColor.clear
+                    cell.affinity.layer.cornerRadius = 10
+                    cell.affinity.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+                    cell.affinity.clipsToBounds = true
                 }
                 cell.isUserInteractionEnabled = false
                 return cell
@@ -107,6 +113,15 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
             }
         case 4:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell5") as? EditFortuneTellingTableViewCell {
+                // cellの背景を透過
+                cell.backgroundColor = UIColor.clear
+                // cell内のcontentViewの背景を透過
+                cell.contentView.backgroundColor = UIColor.clear
+                cell.isUserInteractionEnabled = false
+                return cell
+            }
+        case 5:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell6") as? EditFortuneTellingTableViewCell {
                 if let date = delegate.info {
                     cell.adviceText.text = date.adviceText
                     // cellの背景を透過
@@ -118,7 +133,7 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
                 return cell
             }
         default:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell6") as? EditFortuneTellingTableViewCell {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell7") as? EditFortuneTellingTableViewCell {
                 if let date = delegate.info {
                     // cellの背景を透過
                     cell.backgroundColor = UIColor.clear
@@ -132,7 +147,6 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
     }
 }
 extension EditFortuneTellingViewController: UITableViewDelegate {
-    
 //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 //            return UITableView.automaticDimension
 //        }

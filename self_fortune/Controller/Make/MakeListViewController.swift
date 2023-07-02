@@ -191,7 +191,7 @@ extension MakeListViewController: UITableViewDataSource {
             let date = fortuneListController.fortuneItems[indexPath.row]
             cell.setup(fortuneName: date.fortuneName)
             cell.listView.backgroundColor = UIColor.clear
-            var cellSelectedBgView = UIView()
+            let cellSelectedBgView = UIView()
             cellSelectedBgView.backgroundColor = UIColor.clear
             cell.selectedBackgroundView = cellSelectedBgView
             if indexPath.row == selectedIndexPath {

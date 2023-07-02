@@ -41,7 +41,7 @@
 		B71E08AC2A0DC7450046DE16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B71E08B22A0E15010046DE16 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B71E08C52A0E204C0046DE16 /* FortuneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneViewController.swift; sourceTree = "<group>"; };
-		B759023C2A45A4BC002B850D /* EditFortuneTellingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditFortuneTellingViewController.swift; path = self_fortune/View/Make/EditFortuneTellingViewController.swift; sourceTree = SOURCE_ROOT; };
+		B759023C2A45A4BC002B850D /* EditFortuneTellingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditFortuneTellingViewController.swift; path = self_fortune/Controller/Make/EditFortuneTellingViewController.swift; sourceTree = SOURCE_ROOT; };
 		B759023E2A45B325002B850D /* EditFortuneTellingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFortuneTellingTableViewCell.swift; sourceTree = "<group>"; };
 		B75902402A4706A5002B850D /* MakeFortuneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeFortuneViewController.swift; sourceTree = "<group>"; };
 		B759B5232A44709000528B45 /* FortuneDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneDoViewController.swift; sourceTree = "<group>"; };
@@ -93,23 +93,22 @@
 			children = (
 				B71E089E2A0DC7400046DE16 /* AppDelegate.swift */,
 				B71E08A02A0DC7400046DE16 /* SceneDelegate.swift */,
-				B71E08BA2A0E15BD0046DE16 /* View */,
-				B71E08A42A0DC7400046DE16 /* Main.storyboard */,
-				B71E08A72A0DC7450046DE16 /* Assets.xcassets */,
-				B71E08A92A0DC7450046DE16 /* LaunchScreen.storyboard */,
+				B75902432A4D1A82002B850D /* Model */,
+				B75902422A4D1A2F002B850D /* View */,
+				B71E08BA2A0E15BD0046DE16 /* Controller */,
 				B71E08AC2A0DC7450046DE16 /* Info.plist */,
 				B7C3628C2A31DD2A009BD3AC /* self_fortune.xcdatamodeld */,
 			);
 			path = self_fortune;
 			sourceTree = "<group>";
 		};
-		B71E08BA2A0E15BD0046DE16 /* View */ = {
+		B71E08BA2A0E15BD0046DE16 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				B71E08BC2A0E1AF20046DE16 /* Fortune */,
 				B71E08BE2A0E1B100046DE16 /* Make */,
 			);
-			path = View;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		B71E08BC2A0E1AF20046DE16 /* Fortune */ = {
@@ -130,13 +129,30 @@
 			children = (
 				B7CA518D2A2425A300F2096B /* MakeListViewController.swift */,
 				B7CA518F2A24272500F2096B /* MakeListTableViewCell.swift */,
-				B7CA51902A24272500F2096B /* MakeListTableViewCell.xib */,
 				B7CA51932A2436CF00F2096B /* MakeResultViewController.swift */,
 				B759023C2A45A4BC002B850D /* EditFortuneTellingViewController.swift */,
 				B759023E2A45B325002B850D /* EditFortuneTellingTableViewCell.swift */,
 				B75902402A4706A5002B850D /* MakeFortuneViewController.swift */,
 			);
 			path = Make;
+			sourceTree = "<group>";
+		};
+		B75902422A4D1A2F002B850D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B71E08A42A0DC7400046DE16 /* Main.storyboard */,
+				B7CA51902A24272500F2096B /* MakeListTableViewCell.xib */,
+				B71E08A72A0DC7450046DE16 /* Assets.xcassets */,
+				B71E08A92A0DC7450046DE16 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B75902432A4D1A82002B850D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D6499FBFCD0B16FAFC03315C /* Pods */ = {
