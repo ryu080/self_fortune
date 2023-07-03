@@ -59,7 +59,7 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as? EditFortuneTellingTableViewCell {
                 if let date = delegate.info {
                     cell.label1.text = "\((familyName1 ?? "") + (firstName1 ?? ""))さんと"
-                    cell.label2.text = "\((familyName2 ?? "") + (firstName2 ?? ""))さんの\n相性の良さは..."
+                    cell.label2.text = "\((familyName2 ?? "") + (firstName2 ?? ""))さんの相性度は..."
                     // cellの背景を透過
                     cell.backgroundColor = UIColor.clear
                     // cell内のcontentViewの背景を透過
@@ -72,13 +72,11 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? EditFortuneTellingTableViewCell {
                 if let date = delegate.info {
-                    cell.showPercentLabel.text = "\(date.percent)%"
+                    cell.showPercentLabel.text = "\(date.percent)"
                     // cellの背景を透過
                     cell.backgroundColor = UIColor.clear
                     // cell内のcontentViewの背景を透過
                     cell.contentView.backgroundColor = UIColor.clear
-                    cell.showPercentLabel.layer.cornerRadius = 10
-                    cell.showPercentLabel.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
                     cell.showPercentLabel.clipsToBounds = true
                 }
                 cell.isUserInteractionEnabled = false
@@ -92,8 +90,6 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
                     cell.backgroundColor = UIColor.clear
                     // cell内のcontentViewの背景を透過
                     cell.contentView.backgroundColor = UIColor.clear
-                    cell.affinity.layer.cornerRadius = 10
-                    cell.affinity.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
                     cell.affinity.clipsToBounds = true
                 }
                 cell.isUserInteractionEnabled = false

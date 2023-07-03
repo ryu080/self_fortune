@@ -17,12 +17,16 @@ class MakeFortuneViewController: UIViewController {
     @IBOutlet weak var templateButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
     
-    private let placeholder = "相性の説明文を入力してください。\n\n説明文は、420文字・20行以内で記載してください。"
+    @IBOutlet weak var affinityTextViewButtonConstraint: NSLayoutConstraint!
+    
+    private let placeholder1 = "相性の説明文を入力してください"
+    private let placeholder2 = "アドバイスの説明文を入力してください"
     private let textLength = 420
     private let textView = UITextView()
     var addFortune = true
     var info: InfoFortune?
     private let delegate = UIApplication.shared.delegate as! AppDelegate
+    @IBOutlet weak var scrollView: UIScrollView!
     func initialize(){
         affinityTextField.text = ""
         affinityTextView.text = ""
@@ -32,8 +36,8 @@ class MakeFortuneViewController: UIViewController {
         super.viewDidLoad()
         affinityTextView.delegate = self
         adviceTextView.delegate = self
-        affinityTextView.text = placeholder
-        adviceTextView.text = placeholder
+        affinityTextView.text = placeholder1
+        adviceTextView.text = placeholder2
         affinityTextField.placeholder = "2人の相性"
         //タップでキーボードを下げる
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
@@ -43,12 +47,12 @@ class MakeFortuneViewController: UIViewController {
         swipeDownGesture.direction = .down
         self.view.addGestureRecognizer(swipeDownGesture)
         if let date = info {
-            showPercentLabel.text = "\(date.percent)%"
+            showPercentLabel.text = "\(date.percent)"
             percentSlider.value = Float(date.percent)
             affinityTextField.text = date.affinity
             affinityTextView.text = date.affinityText
             adviceTextView.text = date.adviceText
-                        
+            scrollView.addSubview(affinityTextView)
         }
     }
     
@@ -75,7 +79,7 @@ class MakeFortuneViewController: UIViewController {
     }
     @IBAction func sliderChanged(_ sender: UISlider) {
         let percent = Int(sender.value)
-        showPercentLabel.text = "\(percent)%"
+        showPercentLabel.text = "\(percent)"
     }
     
     @IBAction func templateButton(_ sender: Any) {
@@ -109,6 +113,8 @@ class MakeFortuneViewController: UIViewController {
             affinityTextView.text = "2人の関係は完璧です。\nお互いに欠かせない存在です。\n深い絆と信頼があり、お互いの強みを活かし合いながら良いコミュニケーションと協力関係を築いています。\n共通の目標や夢を持ち、互いを支えながら成長していく関係です。"
             adviceTextView.text = "変わりなどいません一生大切にしましょう"
         }
+        // スクロールを一番上に移動
+                scrollView.setContentOffset(CGPoint.zero, animated: true)
     }
     
     @IBAction func saveButton(_ sender: Any) {
@@ -160,49 +166,56 @@ class MakeFortuneViewController: UIViewController {
         }else if segue.identifier == "editExitSegue" {
             var title = ""
             if let date = info{
-                 title = date.fortuneName
+                title = date.fortuneName
             }
             info = InfoFortune(fortuneName: title, percent: Int(percentSlider.value), affinity: affinityTextField.text ?? "", affinityText: affinityTextView.text, adviceText: adviceTextView.text)
             delegate.info = info
         }
     }
-
+    
     
 }
 
 extension MakeFortuneViewController: UITextViewDelegate {
     // 文字数制限＆行数制限
-       func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-           //既に存在する改行数
-           let existingLines = textView.text.components(separatedBy: .newlines)
-           //新規改行数
-           let newLines = text.components(separatedBy: .newlines)
-           //最終改行数。-1は編集したら必ず1改行としてカウントされるから。
-           let linesAfterChange = existingLines.count + newLines.count - 1
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        //既に存在する改行数
+        let existingLines = textView.text.components(separatedBy: .newlines)
+        //新規改行数
+        let newLines = text.components(separatedBy: .newlines)
+        //最終改行数。-1は編集したら必ず1改行としてカウントされるから。
+        let linesAfterChange = existingLines.count + newLines.count - 1
 
-           return linesAfterChange <= 20 && textView.text.count + (text.count - range.length) <= textLength
-       }
+        return linesAfterChange <= 20 && textView.text.count + (text.count - range.length) <= textLength
+    }
 
-       // TextViewの内容が変わるたびに実行される
-       func textViewDidChange(_ textView: UITextView) {
-           //既に存在する改行数
-           let existingLines = textView.text.components(separatedBy: .newlines)
-           if existingLines.count <= 20 {
-           }
-       }
-
-       // 入力開始時にプレースホルダーの内容が入っていたら空にする
-       func textViewDidBeginEditing(_ textView: UITextView) {
-           if textView.text == placeholder {
-               textView.text = nil
-               textView.textColor = .white
-           }
-       }
+    // TextViewの内容が変わるたびに実行される
+    func textViewDidChange(_ textView: UITextView) {
+        //既に存在する改行数
+        let existingLines = textView.text.components(separatedBy: .newlines)
+        if existingLines.count <= 20 {
+        }
+    }
+    
+    // 入力開始時にプレースホルダーの内容が入っていたら空にする
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.text == placeholder1 {
+            textView.text = nil
+            textView.textColor = .white
+        }else if textView.text == placeholder2 {
+            textView.text = nil
+            textView.textColor = .white
+        }
+    }
     
     // 入力終了後に文字が入力されていなかったらプレースホルダー表示
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text.isEmpty {
-            textView.text = placeholder
+            if textView == affinityTextView {
+                textView.text = placeholder1
+            }else if textView == adviceTextView {
+                textView.text = placeholder2
+            }
             textView.textColor = .white
         }
     }
