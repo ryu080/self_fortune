@@ -58,8 +58,8 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
         case 0:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as? EditFortuneTellingTableViewCell {
                 if let date = delegate.info {
-                    cell.label1.text = "\((familyName1 ?? "") + (firstName1 ?? ""))さんと"
-                    cell.label2.text = "\((familyName2 ?? "") + (firstName2 ?? ""))さんの相性度は..."
+                    cell.label1.text = "\((familyName1 ?? "") + (firstName1 ?? ""))さんと\n\((familyName2 ?? "") + (firstName2 ?? ""))さんの"
+                    cell.label2.text = "相性度は..."
                     // cellの背景を透過
                     cell.backgroundColor = UIColor.clear
                     // cell内のcontentViewの背景を透過
@@ -72,12 +72,12 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? EditFortuneTellingTableViewCell {
                 if let date = delegate.info {
-                    cell.showPercentLabel.text = "\(date.percent)"
+                    cell.affinity.text = date.affinity
                     // cellの背景を透過
                     cell.backgroundColor = UIColor.clear
                     // cell内のcontentViewの背景を透過
                     cell.contentView.backgroundColor = UIColor.clear
-                    cell.showPercentLabel.clipsToBounds = true
+                    cell.affinity.clipsToBounds = true
                 }
                 cell.isUserInteractionEnabled = false
                 return cell
@@ -85,12 +85,12 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
         case 2:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell3") as? EditFortuneTellingTableViewCell {
                 if let date = delegate.info {
-                    cell.affinity.text = date.affinity
+                    cell.showPercentLabel.text = "\(date.percent)"
                     // cellの背景を透過
                     cell.backgroundColor = UIColor.clear
                     // cell内のcontentViewの背景を透過
                     cell.contentView.backgroundColor = UIColor.clear
-                    cell.affinity.clipsToBounds = true
+                    cell.showPercentLabel.clipsToBounds = true
                 }
                 cell.isUserInteractionEnabled = false
                 return cell

@@ -17,8 +17,6 @@ class MakeFortuneViewController: UIViewController {
     @IBOutlet weak var templateButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
     
-    @IBOutlet weak var affinityTextViewButtonConstraint: NSLayoutConstraint!
-    
     private let placeholder1 = "相性の説明文を入力してください"
     private let placeholder2 = "アドバイスの説明文を入力してください"
     private let textLength = 420
@@ -27,18 +25,20 @@ class MakeFortuneViewController: UIViewController {
     var info: InfoFortune?
     private let delegate = UIApplication.shared.delegate as! AppDelegate
     @IBOutlet weak var scrollView: UIScrollView!
+    
     func initialize(){
         affinityTextField.text = ""
         affinityTextView.text = ""
         adviceTextView.text = ""
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         affinityTextView.delegate = self
         adviceTextView.delegate = self
+        affinityTextField.placeholder = "2人の相性"
         affinityTextView.text = placeholder1
         adviceTextView.text = placeholder2
-        affinityTextField.placeholder = "2人の相性"
         //タップでキーボードを下げる
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         self.view.addGestureRecognizer(tapGesture)
@@ -52,7 +52,6 @@ class MakeFortuneViewController: UIViewController {
             affinityTextField.text = date.affinity
             affinityTextView.text = date.affinityText
             adviceTextView.text = date.adviceText
-            scrollView.addSubview(affinityTextView)
         }
     }
     
@@ -202,7 +201,8 @@ extension MakeFortuneViewController: UITextViewDelegate {
         if textView.text == placeholder1 {
             textView.text = nil
             textView.textColor = .white
-        }else if textView.text == placeholder2 {
+        }
+        if textView.text == placeholder2 {
             textView.text = nil
             textView.textColor = .white
         }
@@ -213,7 +213,8 @@ extension MakeFortuneViewController: UITextViewDelegate {
         if textView.text.isEmpty {
             if textView == affinityTextView {
                 textView.text = placeholder1
-            }else if textView == adviceTextView {
+            }
+            if textView == adviceTextView {
                 textView.text = placeholder2
             }
             textView.textColor = .white
