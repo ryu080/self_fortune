@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "background5.png",
+      "filename" : "make off.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "make off 2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "make off 3.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

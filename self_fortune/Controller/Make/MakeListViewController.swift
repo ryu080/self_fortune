@@ -80,6 +80,7 @@ class MakeListViewController: UIViewController {
         listTableView.delegate = self
         listTableView.dataSource = self
         listTableView.backgroundColor = UIColor.clear
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         listTableView.register(UINib(nibName: "MakeListTableViewCell", bundle: nil), forCellReuseIdentifier: "makeListTableViewCell")
         
         bannerView = GADBannerView(adSize: GADAdSizeBanner)
