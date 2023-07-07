@@ -40,7 +40,7 @@ class FortuneListController {
         if let saveDate = defaults.data(forKey: "fortuneList"), let saveList = try? JSONDecoder().decode(FortuneList.self, from: saveDate) {
             fortuneList = saveList
         }else {
-            fortuneList = FortuneList(items: [InfoFortune(fortuneName:"サンプル",percent: 100, affinity: "運命の相手", affinityText: "2人の関係は完璧です。\nお互いに欠かせない存在です。\n深い絆と信頼があり、お互いの強みを活かし合いながら良いコミュニケーションと協力関係を築いています。\n共通の目標や夢を持ち、互いを支えながら成長していく関係です。", adviceText: "変わりなどいません一生大切にしましょう")])
+            fortuneList = FortuneList(items: [InfoFortune(fortuneName:"サンプル",percent: 100, affinity: "〜運命の相手〜", affinityText: "2人の関係は完璧です。\nお互いに欠かせない存在です。\n深い絆と信頼があり、お互いの強みを活かし合いながら良いコミュニケーションと協力関係を築いています。\n共通の目標や夢を持ち、互いを支えながら成長していく関係です。", adviceText: "変わりなどいません一生大切にしましょう")])
         }
     }
     var fortuneItems:[InfoFortune] {

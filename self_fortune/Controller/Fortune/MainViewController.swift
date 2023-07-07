@@ -24,7 +24,7 @@ class MainViewController: UIViewController {
             
         self.setTabBarItem(index: 0, titile: "占う", image: UIImage(named: "uranai off")!, selectedImage: UIImage(named: "uranai on")!, offColor: UIColor.blue, onColor: UIColor.init(red: 0.54, green: 0.32, blue: 1.00, alpha: 1.00))
             self.setTabBarItem(index: 1, titile: "作成", image: UIImage(named: "make off")!, selectedImage: UIImage(named: "make on")!, offColor: UIColor.gray, onColor: UIColor.init(red: 0.54, green: 0.32, blue: 1.00, alpha: 1.00))
-            
+
             UITabBarItem.appearance().setTitleTextAttributes([.font : UIFont.systemFont(ofSize: 11)], for: .normal)
             UITabBarItem.appearance().setTitleTextAttributes([.font : UIFont.systemFont(ofSize: 11)], for: .selected)
             
