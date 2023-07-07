@@ -15,11 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstBackground2" translatesAutoresizingMaskIntoConstraints="NO" id="x51-jZ-DOd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstBackground (4).png" translatesAutoresizingMaskIntoConstraints="NO" id="x51-jZ-DOd">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstBackground" translatesAutoresizingMaskIntoConstraints="NO" id="ZwO-wB-qeI">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstBackground (6).png" translatesAutoresizingMaskIntoConstraints="NO" id="ZwO-wB-qeI">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
@@ -44,7 +44,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="firstBackground" width="360" height="640"/>
-        <image name="firstBackground2" width="1080" height="1920"/>
+        <image name="firstBackground (4).png" width="810" height="1440"/>
+        <image name="firstBackground (6).png" width="506.25" height="900"/>
     </resources>
 </document>
