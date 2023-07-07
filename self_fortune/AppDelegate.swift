@@ -12,15 +12,17 @@ import GoogleMobileAds
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var text = ""
     var info:InfoFortune?
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+            // 2秒の待機時間を設定
+            Thread.sleep(forTimeInterval: 2.0)
+            return true
+        }
         GADMobileAds.sharedInstance().start(completionHandler: nil)
-        // 受け取ったデータをUserDefaultsに保存する
-
         return true
     }
 

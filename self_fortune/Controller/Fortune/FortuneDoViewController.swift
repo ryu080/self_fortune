@@ -36,7 +36,10 @@ class FortuneDoViewController: UIViewController {
     let years = Array(1930...2023) // 年の範囲
     let months = Array(1...12) // 月の範囲
     let days = Array(1...31) // 日の範囲
+    
     var currentTextFieldTag: Int = 0
+    var keyboardHeight: CGFloat = 0.0
+    var currentTextField: UITextField?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,16 +112,15 @@ class FortuneDoViewController: UIViewController {
         
         // ツールバーを設定してキーボードに追加
         //ツールバーに完了をつけるか🟠
-        //        familyNameTextField1.inputAccessoryView = createToolbar()
-        //        firstNameTextField1.inputAccessoryView = createToolbar()
+        familyNameTextField1.inputAccessoryView = createToolbar(for: familyNameTextField1)
+        firstNameTextField1.inputAccessoryView = createToolbar(for: firstNameTextField1)
         
         yearTextField1.inputAccessoryView = createToolbar(for: yearTextField1)
         monthTextField1.inputAccessoryView = createToolbar(for: monthTextField1)
         dayTextField1.inputAccessoryView = createToolbar(for: dayTextField1)
-        
         //ツールバーに完了をつけるか🟠
-        //        familyNameTextField2.inputAccessoryView = createToolbar()
-        //        firstNameTextField2.inputAccessoryView = createToolbar()
+        familyNameTextField2.inputAccessoryView = createToolbar(for: familyNameTextField2)
+        firstNameTextField2.inputAccessoryView = createToolbar(for: firstNameTextField2)
         
         yearTextField2.inputAccessoryView = createToolbar(for: yearTextField2)
         monthTextField2.inputAccessoryView = createToolbar(for: monthTextField2)
@@ -187,26 +189,74 @@ class FortuneDoViewController: UIViewController {
         
         let doneButton = UIBarButtonItem(title: "完了", style: .done, target: self, action: #selector(doneButtonTapped(_:)))
         doneButton.tag = textField.tag // テキストフィールドのタグをボタンのタグとして設定
-        let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        toolbar.setItems([spaceButton, doneButton], animated: false)
-        toolbar.isUserInteractionEnabled = true
+        
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        
+        // 「chevron.down」アイコンを使った上ボタンを作成
+        let upButton = UIBarButtonItem(image: UIImage(systemName: "chevron.up"), style: .plain, target: self, action: #selector(upButtonTapped(_:)))
+        upButton.tag = textField.tag // テキストフィールドのタグをボタンのタグとして設定
+        
+        // 「chevron.down」アイコンを使った下ボタンを作成
+        let downButton = UIBarButtonItem(image: UIImage(systemName: "chevron.down"), style: .plain, target: self, action: #selector(downButtonTapped(_:)))
+        downButton.tag = textField.tag // テキストフィールドのタグをボタンのタグとして設定
+        
+        if textField == familyNameTextField1{
+            upButton.isEnabled = false
+        }else if textField == dayTextField2 {
+            downButton.isEnabled = false
+        }
+        toolbar.setItems([upButton, downButton, flexibleSpace, doneButton], animated: false)
         
         return toolbar
     }
     
-    @objc func doneButtonTapped(_ sender: UIBarButtonItem) {
-        if let textField = view.viewWithTag(currentTextFieldTag + 1) as? UITextField {
+    @objc func upButtonTapped(_ sender: UIBarButtonItem) {
+        // 上ボタンがタップされたときの処理
+        // タグを使ってテキストフィールドを特定し、上の項目を選択する処理を実装
+        if let textField = view.viewWithTag(currentTextFieldTag - 1) as? UITextField {
             textField.becomeFirstResponder() // 次のテキストフィールドにフォーカスを移動
         } else {
-            if let textField = view.viewWithTag(currentTextFieldTag) as? UITextField {
-                textField.resignFirstResponder() // キーボードを閉じる
+            if view.viewWithTag(currentTextFieldTag) is UITextField {
+                
             }
         }
     }
+    
+    @objc func downButtonTapped(_ sender: UIBarButtonItem) {
+        // 下ボタンがタップされたときの処理
+        // タグを使ってテキストフィールドを特定し、下の項目を選択する処理を実装
+        if let textField = view.viewWithTag(currentTextFieldTag + 1) as? UITextField {
+            textField.becomeFirstResponder() // 次のテキストフィールドにフォーカスを移動
+        } else {
+            if view.viewWithTag(currentTextFieldTag) is UITextField {
+                
+            }
+        }
+    }
+    @objc func doneButtonTapped(_ sender: UIBarButtonItem) {
+        view.endEditing(true)
+    }
 }
 extension FortuneDoViewController: UITextFieldDelegate {
+    
+    
     func textFieldDidBeginEditing(_ textField: UITextField) {
+        currentTextField = textField
         currentTextFieldTag = textField.tag
+        currentTextField = textField
+        // テキストフィールドがキーボードによって隠れる場合には、画面をスクロールする
+        if let scrollView = self.view as? UIScrollView {
+            let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: keyboardHeight, right: 0.0)
+            scrollView.contentInset = contentInsets
+            scrollView.scrollIndicatorInsets = contentInsets
+            
+            var rect = self.view.frame
+            rect.size.height -= keyboardHeight
+            
+            if !rect.contains(textField.frame.origin) {
+                scrollView.scrollRectToVisible(textField.frame, animated: true)
+            }
+        }
         switch textField {
         case familyNameTextField1:
             familyNameTextField1.backgroundColor = .white
@@ -236,18 +286,42 @@ extension FortuneDoViewController: UITextFieldDelegate {
             break
         }
     }
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        // 次のTag番号を持っているテキストボックスがあれば、フォーカスする
-        let nextTag = textField.tag + 1
-        if let nextTextField = self.view.viewWithTag(nextTag) {
-            nextTextField.becomeFirstResponder()
-        }else {
-            textField.resignFirstResponder()
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue,
+           let currentTextField = currentTextField {
+            let keyboardHeight = keyboardFrame.cgRectValue.height
+            let textFieldOrigin = currentTextField.convert(currentTextField.bounds.origin, to: self.view)
+            let textFieldBottom = textFieldOrigin.y + currentTextField.bounds.height
+            let keyboardOverlap = textFieldBottom - (self.view.bounds.height - keyboardHeight)
+            
+            if keyboardOverlap > 0 {
+                UIView.animate(withDuration: 0.3) {
+                    self.view.transform = CGAffineTransform(translationX: 0, y: -keyboardOverlap)
+                }
+            }
         }
-        return true
     }
     
+    @objc func keyboardWillHide(notification: NSNotification) {
+        UIView.animate(withDuration: 0.3) {
+            self.view.transform = CGAffineTransform.identity
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
 }
+
 extension FortuneDoViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         1
