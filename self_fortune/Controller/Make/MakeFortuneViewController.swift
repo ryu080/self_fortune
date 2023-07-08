@@ -21,9 +21,15 @@ class MakeFortuneViewController: UIViewController {
     private let placeholder2 = "アドバイスの説明文を入力してください"
     private let textLength = 420
     private let textView = UITextView()
+    
     var addFortune = true
     var info: InfoFortune?
-    private let delegate = UIApplication.shared.delegate as! AppDelegate
+    var delegate: AppDelegate? {
+        guard let delegate = UIApplication.shared.delegate as? AppDelegate else {
+            return nil
+    }
+        return delegate
+    }
     @IBOutlet weak var scrollView: UIScrollView!
     
     func initialize(){
@@ -159,16 +165,17 @@ class MakeFortuneViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "createExitSegue" {
-            let title = sender as! String
-            info = InfoFortune(fortuneName: title, percent: Int(percentSlider.value), affinity: affinityTextField.text ?? "", affinityText: affinityTextView.text, adviceText: adviceTextView.text)
-            delegate.info = info
+            if let title = sender as? String {
+                info = InfoFortune(fortuneName: title, percent: Int(percentSlider.value), affinity: affinityTextField.text ?? "", affinityText: affinityTextView.text, adviceText: adviceTextView.text)
+                delegate?.info = info
+            }
         }else if segue.identifier == "editExitSegue" {
             var title = ""
             if let date = info{
                 title = date.fortuneName
             }
             info = InfoFortune(fortuneName: title, percent: Int(percentSlider.value), affinity: affinityTextField.text ?? "", affinityText: affinityTextView.text, adviceText: adviceTextView.text)
-            delegate.info = info
+            delegate?.info = info
         }
     }
     

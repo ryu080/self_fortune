@@ -45,6 +45,6 @@
     </scenes>
     <resources>
         <image name="firstBackground (4).png" width="810" height="1440"/>
-        <image name="firstBackground (6).png" width="506.25" height="900"/>
+        <image name="firstBackground (6).png" width="450" height="800.25"/>
     </resources>
 </document>

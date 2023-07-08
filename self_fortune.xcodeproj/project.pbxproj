@@ -20,6 +20,7 @@
 		B759B5242A44709100528B45 /* FortuneDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759B5232A44709000528B45 /* FortuneDoViewController.swift */; };
 		B7AC41C62A58206500643FB8 /* firstBackground (4).png in Resources */ = {isa = PBXBuildFile; fileRef = B7AC41C42A58206500643FB8 /* firstBackground (4).png */; };
 		B7AC41D12A59295A00643FB8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B7AC41D02A59295A00643FB8 /* .swiftlint.yml */; };
+		B7AC41D32A59A7F500643FB8 /* firstBackground (6).png in Resources */ = {isa = PBXBuildFile; fileRef = B7AC41D22A59A7F400643FB8 /* firstBackground (6).png */; };
 		B7C3628E2A31DD2A009BD3AC /* self_fortune.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7C3628C2A31DD2A009BD3AC /* self_fortune.xcdatamodeld */; };
 		B7CA518E2A2425A300F2096B /* MakeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA518D2A2425A300F2096B /* MakeListViewController.swift */; };
 		B7CA51912A24272500F2096B /* MakeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA518F2A24272500F2096B /* MakeListTableViewCell.swift */; };
@@ -42,8 +43,8 @@
 		B75902402A4706A5002B850D /* MakeFortuneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeFortuneViewController.swift; sourceTree = "<group>"; };
 		B759B5232A44709000528B45 /* FortuneDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneDoViewController.swift; sourceTree = "<group>"; };
 		B7AC41C42A58206500643FB8 /* firstBackground (4).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "firstBackground (4).png"; sourceTree = "<group>"; };
-		B7AC41CE2A582E9500643FB8 /* firstBackground (6).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "firstBackground (6).png"; sourceTree = "<group>"; };
 		B7AC41D02A59295A00643FB8 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		B7AC41D22A59A7F400643FB8 /* firstBackground (6).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "firstBackground (6).png"; path = "../../../../../../Downloads/self_fortune.image/image/firstBackground (6).png"; sourceTree = "<group>"; };
 		B7BAA8BE2A3F3063008BA193 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		B7BAA8BF2A3F3063008BA193 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		B7C3628D2A31DD2A009BD3AC /* self_fortune.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = self_fortune.xcdatamodel; sourceTree = "<group>"; };
@@ -151,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				B7AC41C42A58206500643FB8 /* firstBackground (4).png */,
-				B7AC41CE2A582E9500643FB8 /* firstBackground (6).png */,
+				B7AC41D22A59A7F400643FB8 /* firstBackground (6).png */,
 			);
 			path = LaunchScreen.image;
 			sourceTree = "<group>";
@@ -241,6 +242,7 @@
 				B71E08A82A0DC7450046DE16 /* Assets.xcassets in Resources */,
 				B71E08A62A0DC7400046DE16 /* Main.storyboard in Resources */,
 				B7AC41C62A58206500643FB8 /* firstBackground (4).png in Resources */,
+				B7AC41D32A59A7F500643FB8 /* firstBackground (6).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

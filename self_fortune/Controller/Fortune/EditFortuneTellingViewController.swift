@@ -7,9 +7,10 @@
 
 import UIKit
 
-class EditFortuneTellingViewController: UIViewController {
-    let delegate = UIApplication.shared.delegate as! AppDelegate
-    var familyName1:String?
+class EditFortuneTellingViewController: UIViewController, UITableViewDelegate {
+    
+    var delegate: AppDelegate?
+    var familyName1: String?
     var familyName2:String?
     var firstName1:String?
     var firstName2:String?
@@ -18,10 +19,12 @@ class EditFortuneTellingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        configureTableView()
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            delegate = appDelegate
+        }
         editTableView.backgroundColor = UIColor.clear
-        if let data = delegate.info {
-            let valueToSave = delegate.info
+        if let data = delegate?.info {
+            let valueToSave = delegate?.info
             let encoder = JSONEncoder()
             if let encodedValue = try? encoder.encode(valueToSave) {
                 UserDefaults.standard.set(encodedValue, forKey: "InfoFortune")
@@ -32,7 +35,7 @@ class EditFortuneTellingViewController: UIViewController {
                 if let value = try? decoder.decode(InfoFortune.self, from: savedValue) {
                     print(value)
                     print("j")// User(name: "capibara", age: 20)
-                    delegate.info = value
+                    delegate?.info = value
                 }
             }else {
                 
@@ -57,7 +60,7 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
         switch indexPath.row {
         case 0:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as? EditFortuneTellingTableViewCell {
-                if let date = delegate.info {
+                if let date = delegate?.info {
                     cell.label1.text = "\((familyName1 ?? "") + (firstName1 ?? ""))さんと\n\((familyName2 ?? "") + (firstName2 ?? ""))さんの"
                     cell.label2.text = "相性度は..."
                     // cellの背景を透過
@@ -71,7 +74,7 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
             
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? EditFortuneTellingTableViewCell {
-                if let date = delegate.info {
+                if let date = delegate?.info {
                     cell.affinity.text = date.affinity
                     // cellの背景を透過
                     cell.backgroundColor = UIColor.clear
@@ -84,7 +87,7 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
             }
         case 2:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell3") as? EditFortuneTellingTableViewCell {
-                if let date = delegate.info {
+                if let date = delegate?.info {
                     cell.showPercentLabel.text = "\(date.percent)"
                     // cellの背景を透過
                     cell.backgroundColor = UIColor.clear
@@ -97,7 +100,7 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
             }
         case 3:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell4") as? EditFortuneTellingTableViewCell {
-                if let date = delegate.info {
+                if let date = delegate?.info {
                     cell.affinityText.text = date.affinityText
                     // cellの背景を透過
                     cell.backgroundColor = UIColor.clear
@@ -118,7 +121,7 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
             }
         case 5:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell6") as? EditFortuneTellingTableViewCell {
-                if let date = delegate.info {
+                if let date = delegate?.info {
                     cell.adviceText.text = date.adviceText
                     // cellの背景を透過
                     cell.backgroundColor = UIColor.clear
@@ -130,7 +133,7 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
             }
         default:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell7") as? EditFortuneTellingTableViewCell {
-                if let date = delegate.info {
+                if let date = delegate?.info {
                     // cellの背景を透過
                     cell.backgroundColor = UIColor.clear
                     // cell内のcontentViewの背景を透過
@@ -141,9 +144,4 @@ extension EditFortuneTellingViewController: UITableViewDataSource {
         }
         return UITableViewCell()
     }
-}
-extension EditFortuneTellingViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//            return UITableView.automaticDimension
-//        }
 }
