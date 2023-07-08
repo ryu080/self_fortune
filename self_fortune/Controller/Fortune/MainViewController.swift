@@ -7,12 +7,12 @@
 
 import UIKit
 import GoogleMobileAds
+
 class MainViewController: UIViewController {
 
     var bannerView: GADBannerView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         bannerView = GADBannerView(adSize: GADAdSizeBanner)
         bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         bannerView.rootViewController = self
@@ -21,13 +21,11 @@ class MainViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
-            
         self.setTabBarItem(index: 0, titile: "占う", image: UIImage(named: "uranai off")!, selectedImage: UIImage(named: "uranai on")!, offColor: UIColor.blue, onColor: UIColor.init(red: 0.54, green: 0.32, blue: 1.00, alpha: 1.00))
             self.setTabBarItem(index: 1, titile: "作成", image: UIImage(named: "make off")!, selectedImage: UIImage(named: "make on")!, offColor: UIColor.gray, onColor: UIColor.init(red: 0.54, green: 0.32, blue: 1.00, alpha: 1.00))
 
             UITabBarItem.appearance().setTitleTextAttributes([.font : UIFont.systemFont(ofSize: 11)], for: .normal)
             UITabBarItem.appearance().setTitleTextAttributes([.font : UIFont.systemFont(ofSize: 11)], for: .selected)
-            
         }
 
         func setTabBarItem(index: Int, titile: String, image: UIImage, selectedImage: UIImage,  offColor: UIColor, onColor: UIColor) -> Void {
@@ -38,6 +36,7 @@ class MainViewController: UIViewController {
             tabBarItem!.setTitleTextAttributes([ .foregroundColor : offColor], for: .normal)
             tabBarItem!.setTitleTextAttributes([ .foregroundColor : onColor], for: .selected)
         }
+    
     func addBannerViewToView(_ bannerView: GADBannerView) {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(bannerView)

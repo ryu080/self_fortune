@@ -5,5 +5,7 @@ target 'self_fortune' do
   use_frameworks!
   pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
   pod 'Google-Mobile-Ads-SDK'
+  pod 'SwiftLint'
+
 
 end

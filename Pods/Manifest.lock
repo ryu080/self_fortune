@@ -49,10 +49,12 @@ PODS:
   - SVProgressHUD (2.2.6):
     - SVProgressHUD/Core (= 2.2.6)
   - SVProgressHUD/Core (2.2.6)
+  - SwiftLint (0.52.4)
 
 DEPENDENCIES:
   - Google-Mobile-Ads-SDK
   - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
+  - SwiftLint
 
 SPEC REPOS:
   trunk:
@@ -62,6 +64,7 @@ SPEC REPOS:
     - GoogleUtilities
     - nanopb
     - PromisesObjC
+    - SwiftLint
 
 EXTERNAL SOURCES:
   SVProgressHUD:
@@ -80,7 +83,8 @@ SPEC CHECKSUMS:
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
   SVProgressHUD: de812b4f0e1d65358f0064416473174ae619843f
+  SwiftLint: 1cc5cd61ba9bacb2194e340aeb47a2a37fda00b3
 
-PODFILE CHECKSUM: cfc9462ba4bf4455e3a85af395679c82a82f544c
+PODFILE CHECKSUM: fb2745737f0967f2de34304611b377fcf82eb022
 
 COCOAPODS: 1.12.1
