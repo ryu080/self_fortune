@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>GADApplecationIdentifier</key>
+	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-5423237894765994~7898636626</string>
 	<key>GADIsAdManagerApp</key>
 	<string>true</string>

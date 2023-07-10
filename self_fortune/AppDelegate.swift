@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         // 2秒の待機時間を設定
         Thread.sleep(forTimeInterval: 1.0)
-        GADMobileAds.sharedInstance().start(completionHandler: nil)
         return true
     }
 
